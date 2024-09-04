@@ -187,5 +187,47 @@ public class Basico {
         }
     }
     //Clase para multiplicar 3 variable
-    
+    public class RMV3 extends Multiplicacion{
+        public RMV3 (int VM1, int VM2, int VM3, int VM4){
+            super(VM1, VM2, VM3, VM4, 0, 0);
+        }
+        @Override
+        public int multiplicar(){
+            return VM1 * VM2 * VM3;
+        }
+    }
+    //Clase para multiplicar 2 variables
+    public class RMV2 extends Multiplicacion{
+        public RMV2 (int VM1, int VM2, int VM3, int VM4){
+            super(VM1, VM2, VM3, VM4, 0, 0);
+        }
+        @Override
+        public int multiplicar(){
+            return VM1 * VM2;
+        }
+    }
+    //Clase para la base de division
+    public abstract class Division{
+        protected int VD1;
+        protected int VD2;
+        protected int VD3;
+        protected int VD4;
+        protected int VD5;
+        protected int VD6;
+        public Multiplicacion(int VD1, int VD2, int VD3, int VD4, int VD5, int VD6){
+            this.VD1 = VD1;
+            this.VD2 = VD2;
+            this.VD3 = VD3;
+            this.VD4 = VD4;
+            this.VD5 = VD5;
+            this.VD6 = VD6;
+        }
+        public abstract int dividir();//Metodo abstracto de multiplicar
+    }
+    //Clase para dividir 6 variables
+    //Clase para dividir 5 variables
+    //Clase para dividir 4 variables
+    //Clase para dividir 3 variables
+    //Clase para dividir 2 variables
+    //Clase para la base de potencia
 }
