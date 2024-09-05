@@ -278,7 +278,7 @@ public class BasicosOperaciones {
     }
     //Clase para dividir 2 variables
     public class RDV2 extends Division{
-        public RDV2 (int VD1, int VD2){
+        public RDV2(int VD1, int VD2){
             super(VD1, VD2, 1, 1, 1, 1);
         }
         @Override
@@ -289,4 +289,33 @@ public class BasicosOperaciones {
             return VD1 / VD2;
         }
     }
+    //CLase para la base de redondeo
+    public abstract class Redondeo{
+        protected double VRo1;
+        protected double VRo1;
+        protected double VRo2;
+        protected double VRo3;
+        protected double VRo4;
+        public Raiz(double VRo1, double VRo2, double VRo3, double VRo4){
+            this.VRo2 = VRo1;
+        }
+        public abstract int redondear();//Metodo abstracto de redondeo
+    }
+    //Clase para redondear 6 variables
+    //Clase para redondear 5 variables
+    //Clase para redondear 4 variables
+    //Clase para redondear 3 variables
+    //Clase para redondear 2 variables
+    //Clase para redondear 1 variable
+    public class VRo1 extends Redondeo{
+        public VRo1(double VRo1){
+            super(VRo1, 0, 0, 0);
+        }
+        @Override
+        public int redondear(){
+            return long Math.round(VRo1);
+        }
+    }
+    //Clase para la base de ramdom
+    //Math.random();
 }
