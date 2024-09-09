@@ -171,6 +171,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int multiplicar(){
+            System.out.println("Multiplicacion de 6 variables");
             return VM1 * VM2 * VM3 * VM4 * VM5* VM6;
         }
     }
@@ -181,6 +182,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int multiplicar(){
+            System.out.println("Multiplicacion de 5 variables");
             return VM1 * VM2 * VM3 * VM4 * VM5;
         }
     }
@@ -191,26 +193,29 @@ public class BasicosOperaciones {
         }
         @Override
         public int multiplicar(){
+            System.out.println("Multiplicacion de 4 variables");
             return VM1 * VM2 * VM3 * VM4;
         }
     }
     //Clase para multiplicar 3 variable
     public class RMV3 extends Multiplicacion{
-        public RMV3 (int VM1, int VM2, int VM3, int VM4){
-            super(VM1, VM2, VM3, VM4, 0, 0);
+        public RMV3 (int VM1, int VM2, int VM3){
+            super(VM1, VM2, VM3, 0, 0, 0);
         }
         @Override
         public int multiplicar(){
+            System.out.println("Multiplicacion de 3 variables");
             return VM1 * VM2 * VM3;
         }
     }
     //Clase para multiplicar 2 variables
     public class RMV2 extends Multiplicacion{
-        public RMV2 (int VM1, int VM2, int VM3, int VM4){
-            super(VM1, VM2, VM3, VM4, 0, 0);
+        public RMV2 (int VM1, int VM2){
+            super(VM1, VM2, 0, 0, 0, 0);
         }
         @Override
         public int multiplicar(){
+            System.out.println("Multiplicacion de 2 variables");
             return VM1 * VM2;
         }
     }
@@ -242,6 +247,7 @@ public class BasicosOperaciones {
             if (VD2 == 0 || VD3 == 0 || VD4 == 0 || VD5 == 0 || VD6 == 0) {
                 throw new ArithmeticException("No se puede dividir entre 0");
             }
+            System.out.println("Division de 6 variables");
             return VD1 / VD2 / VD3 / VD4 / VD5 / VD6;
         }
     }
@@ -255,6 +261,7 @@ public class BasicosOperaciones {
             if (VD2 == 0 || VD3 == 0 || VD4 == 0 || VD5 == 0){
                 throw new ArithmeticException("No se puede dividir entre 0");
             }
+            System.out.println("Division de 5 variables");
             return VD1 / VD2 / VD3 / VD4 / VD5;
         }
     }
@@ -268,6 +275,7 @@ public class BasicosOperaciones {
             if(VD2 == 0 || VD3 == 0 || VD4 == 0){
                 throw new ArithmeticException("No se puede dividir entre 0");
             }
+            System.out.println("Division de 4 variables");
             return VD1 / VD2 / VD4 / VD3 / VD4;
         }
     }
@@ -281,6 +289,7 @@ public class BasicosOperaciones {
             if(VD2 == 0 || VD3 == 0){
                 throw new ArithmeticException("No se puede dividir entre ");
             }
+            System.out.println("Division de 3 variables");
             return VD1 / VD2 / VD3 / VD3;
         }
     }
@@ -294,6 +303,7 @@ public class BasicosOperaciones {
             if(VD2 == 0){
                 throw new ArithmeticException("No se puede dividir entre 0");
             }
+            System.out.println("Division de 2 variables");
             return VD1 / VD2;
         }
     }

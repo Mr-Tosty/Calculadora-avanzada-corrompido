@@ -23,7 +23,7 @@ public class AvanzadasOperaciones{
         }
         @Override
         public int potenciar(){
-            
+            System.out.println("Potencia de 4 variables");
         }
     }
     //Clase para 3 potencias
@@ -35,6 +35,7 @@ public class AvanzadasOperaciones{
         }
         @Override
         public int raizes(){
+            System.out.println("Potencia de 6 variables");
             return Math.pow(VB, VP1);
         }
     }
@@ -61,6 +62,7 @@ public class AvanzadasOperaciones{
         }
         @Override
         public int raizes(){
+            System.out.println("Raiz de 4 variables");
             return Math.sqrt(VR);
         }
     }
@@ -73,7 +75,7 @@ public class AvanzadasOperaciones{
         }
         @Override
         public int raizes(){
-            System.out.println("Raiz cuadrada de uno")
+            System.out.println("Raiz de 1 variables")
             return Math.sqrt(VR);
         }
     }
