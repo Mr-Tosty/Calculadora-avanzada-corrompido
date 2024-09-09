@@ -27,7 +27,6 @@ public class Main {
          *          TblAi = 18();
          *      }
          * }
-         */
         // Crea un objeto Suma6
         //RSV6 RSV6 = new RSV6(1, 2, 3, 4, 5, 6);
         //int resultado6 = suma6.sumar();
@@ -38,8 +37,6 @@ public class Main {
         //int resultado3 = suma3.sumar();
         //System.out.println("Suma de 3 variables: " + resultado3);
         // Clase principal para probar las implementaciones
-        
-        /*
         public class Main {
             public static void main(String[] args) {
                 int base = 2; // Puedes cambiar esto

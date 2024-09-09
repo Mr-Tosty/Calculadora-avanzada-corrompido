@@ -73,6 +73,7 @@ public class AvanzadasOperaciones{
         }
         @Override
         public int raizes(){
+            System.out.println("Raiz cuadrada de uno")
             return Math.sqrt(VR);
         }
     }

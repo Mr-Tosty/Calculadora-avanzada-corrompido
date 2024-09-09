@@ -47,6 +47,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int sumar() {
+            System.out.println("Suma de 4 variables");
             return VS1 + VS2 + VS3 + VS4;
         }
     }
@@ -57,6 +58,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int sumar() {
+            System.out.println("Suma de 3 variables");
             return VS1 + VS2 + VS3;
         }
     }
@@ -67,6 +69,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int sumar() {
+            System.out.println("Suma de 2 variables");
             return VS1 + VS2;
         }
     }
