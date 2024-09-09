@@ -98,6 +98,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int restar(){
+            System.out.println("Resta de 6 variables");
             return VR1 - VR2 - VR3 - VR4 - VR5 - VR6;
         }
     }
@@ -108,6 +109,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int restar(){
+            System.out.println("Reta de 5 variables");
             return VR1 - VR2 - VR3 - VR3 - VR5;
         }
     }
@@ -118,6 +120,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int restar(){
+            System.out.println("Resta de 4 variables");
             return VR1 - VR2 - VR3 - VR4;
         }
     }
@@ -128,6 +131,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int restar(){
+            Sstem.out.println("Resta de 3 variables");
             return VR1 - VR2 - VR3;
         }
     }
@@ -138,6 +142,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int restar(){
+            System.out.println("Resta de 2 variables");
             return VR1 - VR2;
         }
     }
