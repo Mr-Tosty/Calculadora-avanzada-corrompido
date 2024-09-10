@@ -334,6 +334,104 @@ public class BasicosOperaciones {
             return long Math.round(VRo1);
         }
     }
+    /*
+        // Clase abstracta para la base de redondeo
+    public abstract class Redondeo {
+        protected double[] valores;
+
+        public Redondeo(double... valores) {
+            this.valores = valores;
+        }
+
+        public abstract int[] redondear(); // Método abstracto de redondeo
+    }
+    // Clase para redondear 6 variables
+    public class VRo6 extends Redondeo {
+        public VRo6(double VRo1, double VRo2, double VRo3, double VRo4, double VRo5, double VRo6) {
+            super(VRo1, VRo2, VRo3, VRo4, VRo5, VRo6);
+        }
+
+        @Override
+        public int[] redondear() {
+            int[] resultados = new int[6];
+            for (int i = 0; i < 6; i++) {
+                resultados[i] = (int) Math.round(valores[i]);
+            }
+            return resultados;
+        }
+    }
+    // Clase para redondear 5 variables
+    public class VRo5 extends Redondeo {
+        public VRo5(double VRo1, double VRo2, double VRo3, double VRo4, double VRo5) {
+            super(VRo1, VRo2, VRo3, VRo4, VRo5);
+        }
+
+        @Override
+        public int[] redondear() {
+            int[] resultados = new int[5];
+            for (int i = 0; i < 5; i++) {
+                resultados[i] = (int) Math.round(valores[i]);
+            }
+            return resultados;
+        }
+    }
+    // Clase para redondear 4 variables
+    public class VRo4 extends Redondeo {
+        public VRo4(double VRo1, double VRo2, double VRo3, double VRo4) {
+            super(VRo1, VRo2, VRo3, VRo4);
+        }
+
+        @Override
+        public int[] redondear() {
+            int[] resultados = new int[4];
+            for (int i = 0; i < 4; i++) {
+                resultados[i] = (int) Math.round(valores[i]);
+            }
+            return resultados;
+        }
+    }
+    // Clase para redondear 3 variables
+    public class VRo3 extends Redondeo {
+        public VRo3(double VRo1, double VRo2, double VRo3) {
+            super(VRo1, VRo2, VRo3);
+        }
+
+        @Override
+        public int[] redondear() {
+            int[] resultados = new int[3];
+            for (int i = 0; i < 3; i++) {
+                resultados[i] = (int) Math.round(valores[i]);
+            }
+            return resultados;
+        }
+    }
+    // Clase para redondear 2 variables
+    public class VRo2 extends Redondeo {
+        public VRo2(double VRo1, double VRo2) {
+            super(VRo1, VRo2);
+        }
+
+        @Override
+        public int[] redondear() {
+            int[] resultados = new int[2];
+            for (int i = 0; i < 2; i++) {
+                resultados[i] = (int) Math.round(valores[i]);
+            }
+            return resultados;
+        }
+    }
+    // Clase para redondear 1 variable
+    public class VRo1 extends Redondeo {
+        public VRo1(double VRo1) {
+            super(VRo1);
+        }
+
+        @Override
+        public int[] redondear() {
+            return new int[]{(int) Math.round(valores[0])};
+        }
+    }
+    */
     //Clase para la base de ramdom
     //Math.random();
 }
