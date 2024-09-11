@@ -1,4 +1,4 @@
-package Calculos.AvanzadasOperaciones;
+package Avanzada;
 public class AvanzadasOperaciones{
     //Clase para la base de potencia
     public abstract class Potencia{
@@ -75,7 +75,7 @@ public class AvanzadasOperaciones{
         }
         @Override
         public int raizes(){
-            System.out.println("Raiz de 1 variables")
+            System.out.println("Raiz de 1 variables");
             return Math.sqrt(VR);
         }
     }

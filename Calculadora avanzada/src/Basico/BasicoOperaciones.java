@@ -1,4 +1,4 @@
-package Calculos.BasicosOperaciones;
+package Basico;
 public class BasicosOperaciones {
     // Clase base para la suma de variables
     public abstract class Suma {
