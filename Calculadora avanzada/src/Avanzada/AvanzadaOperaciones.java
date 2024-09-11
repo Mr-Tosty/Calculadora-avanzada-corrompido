@@ -1,5 +1,5 @@
 package Avanzada;
-public class AvanzadasOperaciones{
+public class AvanzadaOperaciones{
     //Clase para la base de potencia
     public abstract class Potencia{
         protected double VB;
@@ -7,7 +7,7 @@ public class AvanzadasOperaciones{
         protected double VP2;
         protected double VP3;
         protected double VP4;
-        public Potencia(double VB, double VP2, double VP3, double VP4){
+        public Potencia(double VB, double VP1, double VP2, double VP3, double VP4){
             this.VB = VB;
             this.VP1 = VP1;
             this.VP2 = VP2;
@@ -24,28 +24,29 @@ public class AvanzadasOperaciones{
         @Override
         public int potenciar(){
             System.out.println("Potencia de 4 variables");
+            return (int) Math.pow(VB, VP1);//Modificar aqui
         }
     }
     //Clase para 3 potencias
     //Clase para 2 potencias
     //Clase para 1 potencias
-    public class RVP4 extends Raiz{
-        public RVP4 (double VR, double VI1, double VI2, double VI3, double VI4){
+    public class RVP1 extends Potencia{
+        public RVP1 (double VB, double VP1){
             super(VB, VP1, 1, 1, 1);
         }
         @Override
-        public int raizes(){
-            System.out.println("Potencia de 6 variables");
-            return Math.pow(VB, VP1);
+        public int potenciar(){
+            System.out.println("Potencia de 1 variables");
+            return (int) Math.pow(VB, VP1);
         }
     }
     //Clase para la base de raiz
     public abstract class Raiz{
         protected double VR;
-        protected int VI1;
-        protected int VI2;
-        protected int VI3;
-        protected int VI4;
+        protected double VI1;
+        protected double VI2;
+        protected double VI3;
+        protected double VI4;
         public Raiz(double VR, int VI1, int VI2, int VI3, int VI4){
             this.VR = VR;
             this.VI2 = VI1;
@@ -63,7 +64,7 @@ public class AvanzadasOperaciones{
         @Override
         public int raizes(){
             System.out.println("Raiz de 4 variables");
-            return Math.sqrt(VR);
+            return (int) Math.sqrt(VR);
         }
     }
     //Clase para 3 raizes
@@ -76,7 +77,7 @@ public class AvanzadasOperaciones{
         @Override
         public int raizes(){
             System.out.println("Raiz de 1 variables");
-            return Math.sqrt(VR);
+            return (int) Math.sqrt(VR);
         }
     }
 }

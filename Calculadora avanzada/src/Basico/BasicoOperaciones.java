@@ -1,5 +1,5 @@
 package Basico;
-public class BasicosOperaciones {
+public class BasicoOperaciones {
     // Clase base para la suma de variables
     public abstract class Suma {
         protected int VS1;
@@ -8,7 +8,7 @@ public class BasicosOperaciones {
         protected int VS4;
         protected int VS5;
         protected int VS6;
-        public Suma(int VS1, int VS2, int VS3, int VS4, int VS5, int VS6) {
+        public Suma(int VS1, int VS2, int VS3, int VS4, int VS5, int VS6){
             this.VS1 = VS1;
             this.VS2 = VS2;
             this.VS3 = VS3;
@@ -20,7 +20,7 @@ public class BasicosOperaciones {
     }
     // Clase para sumar 6 variables
     public class RSV6 extends Suma {
-        public RSV6(int VS1, int VS2, int VS3, int VS4, int VS5, int VS6) {
+        public RSV6(int VS1, int VS2, int VS3, int VS4, int VS5, int VS6){
             super(VS1, VS2, VS3, VS4, VS5, VS6);
         }
         @Override
@@ -31,7 +31,7 @@ public class BasicosOperaciones {
     }
     // Clase para sumar 5 variables
     public class RSV5 extends Suma {
-        public RSV5(int VS1, int VS2, int VS3, int VS4, int VS5) {
+        public RSV5(int VS1, int VS2, int VS3, int VS4, int VS5){
             super(VS1, VS2, VS3, VS4, VS5, 0); 
         }
         @Override
@@ -42,7 +42,7 @@ public class BasicosOperaciones {
     }
     // Clase para sumar 4 variables
     public class RSV4 extends Suma {
-        public RSV4(int VS1, int VS2, int VS3, int VS4) {
+        public RSV4(int VS1, int VS2, int VS3, int VS4){
             super(VS1, VS2, VS3, VS4, 0, 0); 
         }
         @Override
@@ -53,7 +53,7 @@ public class BasicosOperaciones {
     }
     // Clase para sumar 3 variables
     public class RSV3 extends Suma {
-        public RSV3(int VS1, int VS2, int VS3) {
+        public RSV3(int VS1, int VS2, int VS3){
             super(VS1, VS2, VS3, 0, 0, 0);
         }
         @Override
@@ -64,7 +64,7 @@ public class BasicosOperaciones {
     }
     // Clase para sumar 2 variables
     public class RSV2 extends Suma {
-        public RSV2(int VS1, int VS2) {
+        public RSV2(int VS1, int VS2){
             super(VS1, VS2, 0, 0, 0, 0);
         }
         @Override
@@ -131,7 +131,7 @@ public class BasicosOperaciones {
         }
         @Override
         public int restar(){
-            Sstem.out.println("Resta de 3 variables");
+            System.out.println("Resta de 3 variables");
             return VR1 - VR2 - VR3;
         }
     }
@@ -310,7 +310,6 @@ public class BasicosOperaciones {
     //CLase para la base de redondeo
     public abstract class Redondeo{
         protected double VRe1;
-        protected double VRe1;
         protected double VRe2;
         protected double VRe3;
         protected double VRe4;
@@ -328,7 +327,7 @@ public class BasicosOperaciones {
     }
     //Clase para redondear 6 variables
     public class VRo6 extends Redondeo{
-        public VRo6(double VRo1, double VRo2, double VRo3, double VRo4, double VRo5, double VRo6){
+        public VRo6(double VRe1, double VRe2, double VRe3, double VRe4, double VRe5, double VRe6){
             super(VRe1, VRe2, VRe3, VRe4, VRe5);
         }
         @Override
@@ -419,6 +418,6 @@ public class BasicosOperaciones {
             };
         }
     }
-    //Clase para la base de ramdom
+    //Clase para la base de aleatorio
     //Math.random();
 }
