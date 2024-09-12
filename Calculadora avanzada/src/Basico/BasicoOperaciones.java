@@ -2,6 +2,7 @@ package Basico;
 public class BasicoOperaciones {
     // Clase base para la suma de variables
     public abstract class Suma {
+        //Variable Suma 1-6
         protected int VS1;
         protected int VS2;
         protected int VS3;
@@ -18,7 +19,7 @@ public class BasicoOperaciones {
         }
         public abstract int sumar(); // Metodo abstracto para la suma
     }
-    // Clase para sumar 6 variables
+    //Clase para sumar 6 variables
     public class RSV6 extends Suma {
         public RSV6(int VS1, int VS2, int VS3, int VS4, int VS5, int VS6){
             super(VS1, VS2, VS3, VS4, VS5, VS6);
@@ -29,7 +30,7 @@ public class BasicoOperaciones {
             return VS1 + VS2 + VS3 + VS4 + VS5 + VS6;
         }
     }
-    // Clase para sumar 5 variables
+    //Clase para sumar 5 variables
     public class RSV5 extends Suma {
         public RSV5(int VS1, int VS2, int VS3, int VS4, int VS5){
             super(VS1, VS2, VS3, VS4, VS5, 0); 
@@ -40,7 +41,7 @@ public class BasicoOperaciones {
             return VS1 + VS2 + VS3 + VS4 + VS5;
         }
     }
-    // Clase para sumar 4 variables
+    //Clase para sumar 4 variables
     public class RSV4 extends Suma {
         public RSV4(int VS1, int VS2, int VS3, int VS4){
             super(VS1, VS2, VS3, VS4, 0, 0); 
@@ -51,7 +52,7 @@ public class BasicoOperaciones {
             return VS1 + VS2 + VS3 + VS4;
         }
     }
-    // Clase para sumar 3 variables
+    //Clase para sumar 3 variables
     public class RSV3 extends Suma {
         public RSV3(int VS1, int VS2, int VS3){
             super(VS1, VS2, VS3, 0, 0, 0);
@@ -62,7 +63,7 @@ public class BasicoOperaciones {
             return VS1 + VS2 + VS3;
         }
     }
-    // Clase para sumar 2 variables
+    //Clase para sumar 2 variables
     public class RSV2 extends Suma {
         public RSV2(int VS1, int VS2){
             super(VS1, VS2, 0, 0, 0, 0);
@@ -75,6 +76,7 @@ public class BasicoOperaciones {
     }
     //Clase para la base resta
     public abstract class Resta{
+        //Variable Resta 1-6
         protected int VR1;
         protected int VR2;
         protected int VR3;
@@ -148,6 +150,7 @@ public class BasicoOperaciones {
     }
     //Clase para la base multiplicacion
     public abstract class Multiplicacion{
+        //Vareiable Multiplicacion 1-6
         protected int VM1;
         protected int VM2;
         protected int VM3;
@@ -221,6 +224,7 @@ public class BasicoOperaciones {
     }
     //Clase para la base de division
     public abstract class Division{
+        //Variable Division 1-6
         protected int VD1;
         protected int VD2;
         protected int VD3;
@@ -309,6 +313,7 @@ public class BasicoOperaciones {
     }
     //CLase para la base de redondeo
     public abstract class Redondeo{
+        //Variable redondeo 1-6
         protected double VRe1;
         protected double VRe2;
         protected double VRe3;
@@ -420,6 +425,7 @@ public class BasicoOperaciones {
     }
     //Clase para la base de aleatorio
     public abstract class Aleatorio{
+        //Variable Aleatorio 1-6
         protected int VA1;
         protected int VA2;
         protected int VA3;

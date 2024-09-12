@@ -2,47 +2,49 @@ package Avanzada;
 public class AvanzadaOperaciones{
     //Clase para la base de potencia
     public abstract class Potencia{
-        protected double VB;
-        protected double VP1;
-        protected double VP2;
-        protected double VP3;
-        protected double VP4;
-        public Potencia(double VB, double VP1, double VP2, double VP3, double VP4){
+        protected double VB;//Variable Base
+        //Variable Exponente 1-6
+        protected double VE1;
+        protected double VE2;
+        protected double VE3;
+        protected double VE4;
+        public Potencia(double VB, double VE1, double VE2, double VE3, double VE4){
             this.VB = VB;
-            this.VP1 = VP1;
-            this.VP2 = VP2;
-            this.VP3 = VP3;
-            this.VP4 = VP4;
+            this.VE1 = VE1;
+            this.VE2 = VE2;
+            this.VE3 = VE3;
+            this.VE4 = VE4;
         }
         public abstract int potenciar();//Metodo abstracto de potencia
     }
     //Clase para 4 potencia
-    public class RVP4 extends Potencia{
-        public RVP4 (double VB, double VP1, double VP2, double VP3, double VP4){
-            super(VB, VP1, VP2, VP3, VP4);
+    public class RVE4 extends Potencia{
+        public RVP4 (double VB, double VE1, double VE2, double VE3, double VE4){
+            super(VB, VE1, VE2, VE3, VE4);
         }
         @Override
         public int potenciar(){
             System.out.println("Potencia de 4 variables");
-            return (int) Math.pow(VB, VP1);//Modificar aqui
+            return (int) Math.pow(VB, VE1);//Modificar aqui
         }
     }
     //Clase para 3 potencias
     //Clase para 2 potencias
     //Clase para 1 potencias
-    public class RVP1 extends Potencia{
-        public RVP1 (double VB, double VP1){
-            super(VB, VP1, 1, 1, 1);
+    public class RVE1 extends Potencia{
+        public RVE1 (double VB, double VE1){
+            super(VB, VE1, 1, 1, 1);
         }
         @Override
         public int potenciar(){
             System.out.println("Potencia de 1 variables");
-            return (int) Math.pow(VB, VP1);
+            return (int) Math.pow(VB, VE1);
         }
     }
     //Clase para la base de raiz
     public abstract class Raiz{
-        protected double VR;
+        protected double VR;//Variable Radicando
+        //Variable radical 1-4
         protected double VI1;
         protected double VI2;
         protected double VI3;
