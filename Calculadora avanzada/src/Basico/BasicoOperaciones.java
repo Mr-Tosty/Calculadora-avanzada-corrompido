@@ -1,4 +1,6 @@
 package Basico;
+import java.util.ArrayList;
+import java.util.List;
 public class BasicoOperaciones {
     // Clase base para la suma de variables
     public abstract class Suma {
@@ -529,4 +531,99 @@ public class BasicoOperaciones {
             return new int[]{VA1};
         }
     }
+    //Clase para la base de cantidad de digitos
+    public abstract class Digitos{
+        private int VDi1;
+        private int VDi2;
+        private int VDi3;
+        private int VDi4;
+        private int VDi5;
+        private int VDi6;
+        public  Digitos(int VDi1, VDi2, VDi3, VDi4, VDi5, VDi6){
+            //Variable Digitos 1-6
+            this.VDi1 = VDi1;
+            this.VDi2 = VDi2;
+            this.VDi3 = VDi3;
+            this.VDi4 = VDi4;
+            this.VDi5 = VDi5;
+            this.VDi6 = VDi6;
+        }
+        public abstract int digitos();//Metodo abstracto de cantidad de digitos
+    }
+    //Clase para la base 6 digitos
+    pubic class RVD1 extends Digitos{
+        public RVD1 (int VDi1, int VDi2, int VDi3, int VDi4, int VDi5, int VDi6){
+            super(VDi1, VDi2, VDi3, VDi4, VDi5, VDi6);
+        }
+        @Override
+        public int digitos(){
+
+        }
+    }
+    //Clase para la base 5 digitos
+    //Clase para la base 4 digitos
+    //Clase para la base 3 digitos
+    //Clase para la base 2 digitos
+    //Clase para la base 1 digito
+        /*
+        
+
+    // Clase para la base de cantidad de dígitos
+    public abstract class Digitos {
+        private int VDi1;
+        private int VDi2;
+        private int VDi3;
+        private int VDi4;
+        private int VDi5;
+        private int VDi6;
+
+        public Digitos(int VDi1, int VDi2, int VDi3, int VDi4, int VDi5, int VDi6) {
+            // Variable Digitos 1-6
+            this.VDi1 = VDi1;
+            this.VDi2 = VDi2;
+            this.VDi3 = VDi3;
+            this.VDi4 = VDi4;
+            this.VDi5 = VDi5;
+            this.VDi6 = VDi6;
+        }
+
+        public abstract List<Integer> digitos(); // Método abstracto para la cantidad de dígitos
+    }
+    // Clase para la base 6 dígitos
+    public class RVD1 extends Digitos {
+        public RVD1(int VDi1, int VDi2, int VDi3, int VDi4, int VDi5, int VDi6) {
+            super(VDi1, VDi2, VDi3, VDi4, VDi5, VDi6);
+        }
+        @Override
+        public List<Integer> digitos() {
+            List<Integer> cantidadDigitos = new ArrayList<>();
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi1())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi3())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi4())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi5())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi6())).length());
+            return cantidadDigitos;
+        }
+        // Métodos para obtener las variables privadas
+        private int getVDi1() {
+            return super.VDi1;
+        }
+        private int getVDi2() {
+            return super.VDi2;
+        }
+        private int getVDi3() {
+            return super.VDi3;
+        }
+        private int getVDi4() {
+            return super.VDi4;
+        }
+        private int getVDi5() {
+            return super.VDi5;
+        }
+        private int getVDi6() {
+            return super.VDi6;
+        }
+    }
+    */
 }
