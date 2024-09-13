@@ -19,7 +19,7 @@ public class AvanzadaOperaciones{
     }
     //Clase para 4 potencia
     public class RVE4 extends Potencia{
-        public RVP4 (double VB, double VE1, double VE2, double VE3, double VE4){
+        public RVE4 (double VB, double VE1, double VE2, double VE3, double VE4){
             super(VB, VE1, VE2, VE3, VE4);
         }
         @Override

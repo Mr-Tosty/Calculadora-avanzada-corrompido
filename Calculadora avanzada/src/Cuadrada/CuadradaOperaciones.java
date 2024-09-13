@@ -5,7 +5,7 @@ public class CuadradaOperaciones{
         //Variable Lado Cuadrado A
         protected int VLCA;
         public Cuadrado(int LCA){
-            this.LCA = LCA;
+            this.VLCA = VLCA;
         }
         public abstract int cuadrado();//Metodo abstracto cuadrado
     }
@@ -16,7 +16,7 @@ public class CuadradaOperaciones{
         //Variable Lado Rectangulo A-B
         protected int VLRA;
         protected int VLRB;
-        public Rectangulo(int VLCA, int VLRB){
+        public Rectangulo(int VLRA, int VLRB){
             this.VLRA = VLRA;
             this.VLRB = VLRB;
         }
@@ -67,7 +67,7 @@ public class CuadradaOperaciones{
         protected int VRoLA;
         protected int VRoLB;
         public Romboide(int VRoLA, int VRoLB){
-            this.VRoLA = VRoLA:
+            this.VRoLA = VRoLA;
             this.VRoLB = VRoLB;
         }
         public abstract int romboide();//Metodo abstracto romboide
@@ -105,7 +105,7 @@ public class CuadradaOperaciones{
         //Variable Hexagono Lado A-B
         protected int VHLA;
         protected int VHLB;
-        public abstract int Hexagono(int VHLA, int VHLB){
+        public Hexagono(int VHLA, int VHLB){
             this.VHLA = VHLA;
             this.VHLB = VHLB;
         }
@@ -118,7 +118,7 @@ public class CuadradaOperaciones{
         //Variable Deltoide d-D
         protected int VDd;
         protected int VDD;
-        public abstract Deltoide(int VDd, int VDD){
+        public Deltoide(int VDd, int VDD){
             this.VDd = VDd;
             this.VDD = VDD;
         }

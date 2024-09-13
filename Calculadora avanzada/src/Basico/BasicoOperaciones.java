@@ -333,7 +333,7 @@ public class BasicoOperaciones {
     //Clase para redondear 6 variables
     public class VRo6 extends Redondeo{
         public VRo6(double VRe1, double VRe2, double VRe3, double VRe4, double VRe5, double VRe6){
-            super(VRe1, VRe2, VRe3, VRe4, VRe5);
+            super(VRe1, VRe2, VRe3, VRe4, VRe5, 0);
         }
         @Override
         public int[] redondear(){
@@ -520,7 +520,7 @@ public class BasicoOperaciones {
     //Clase para 1 variables aleatorio
     public class VAs1 extends Aleatorio{
         public VAs1(int VA1){
-            super(VA1);
+            super(0, 0, 0, 0, 0 ,0);
         }
         @Override
         public int[] alearotizar(){
