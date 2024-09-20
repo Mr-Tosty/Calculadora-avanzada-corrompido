@@ -20,6 +20,26 @@ public class AritmeticaOperaciones{
         }
         public abstract int fraccionsumar();//Metodo abstracto de sumar fracciones
     }
+    //Clase para sumar 3 variables de fraccion
+    public class RSFV3 extends FraccionSuma{
+        public RSFV3 (int VSFN1, int VSFN2, int VSFN3, int VSFD1, int VSFD2, int VSFD3){
+            super(VSFN1, VSFN2, VSFN3, VSFD1, VSFD2, VSFD3);
+        }
+        @Override
+        public int fraccionsumar(){
+            
+        }
+    }
+    //Clase para sumar 2 variables de fraccion
+    public class RSFV2 extends FraccionSuma{
+        public RSFV2 (int VSFN1, int VSFN2, int VSFD1, int VSFD2){
+            super(VSFN1, VSFN2, 0, VSFD1, VSFD2, 0);
+        }
+        @Override
+        public int fraccionsumar(){
+            
+        }
+    }
     //Clase base para la fraccion Resta
     public abstract class FraccionResta{
         //Variable Resta Fraccion Numerador 1-3
@@ -40,6 +60,8 @@ public class AritmeticaOperaciones{
         }
         public abstract int fraccionrestar();//Metodo abstracto de restar fracciones
     }
+    //Clase para restar 3 variables de fraccion
+    //Clase para restar 2 variables de fraccion
     //Clase base para la fraccion Multiplicacion
     public abstract class FraccionMultiplicacion{
         //Variable Multiplicacion Fraccion Numerador 1-3
@@ -60,6 +82,8 @@ public class AritmeticaOperaciones{
         }
         public abstract int fraccionmultiplicar();//Metodo abstracto de multiplicar fracciones
     }
+    //Clase para multiplicar 3 variables de fraccion
+    //Clase para multiplicar 2 variables de fraccion
     //Clase base para la fraccion Division
     public abstract class FraccionDivision{
         //Variable Division Fraccion Numerador 1-3
@@ -80,4 +104,6 @@ public class AritmeticaOperaciones{
         }
         public abstract int fracciondividir();//Metodo abstracto de multiplicar fracciones
     }
+    //Clase para dividir 3 variables de fraccion
+    //Clase para dividir 2 variables de fraccion
 }
