@@ -10,7 +10,7 @@ public class AritmeticaOperaciones{
         protected int VSFD1;
         protected int VSFD2;
         protected int VSFD3;
-        public FraccionSuma(){
+        public FraccionSuma(int VSFN1, int VSFN2, int VSFN3, int VSFD1, int VSFD2, int VSFD3){
             this.VSFN1 = VSFN1;
             this.VSFN2 = VSFN2;
             this.VSFN3 = VSFN3;
@@ -50,7 +50,7 @@ public class AritmeticaOperaciones{
         protected int VRFD1;
         protected int VRFD2;
         protected int VRFD3;
-        public FraccionResta(){
+        public FraccionResta(int VRFN1, int VRFN2, int VRFN3, int VRFD1, int VRFD2, int VRFD3){
             this.VRFN1 = VRFN1;
             this.VRFN2 = VRFN2;
             this.VRFN3 = VRFN3;
@@ -72,7 +72,7 @@ public class AritmeticaOperaciones{
         protected int VMFD1;
         protected int VMFD2;
         protected int VMFD3;
-        public FraccionMultiplicacion(){
+        public FraccionMultiplicacion(int VMFN1, int VMFN2, int VMFN3, int VMFD1, int VMFD2, int VMFD3){
             this.VMFN1 = VMFN1;
             this.VMFN2 = VMFN2;
             this.VMFN3 = VMFN3;
@@ -94,7 +94,7 @@ public class AritmeticaOperaciones{
         protected int VDFD1;
         protected int VDFD2;
         protected int VDFD3;
-        public FraccionDivision(){
+        public FraccionDivision(int VDFN1, int VDFN2, int VDFN3 ,int VDFD1, int VDFD2, int VDFD3){
             this.VDFN1 = VDFN1;
             this.VDFN2 = VDFN2;
             this.VDFN3 = VDFN3;

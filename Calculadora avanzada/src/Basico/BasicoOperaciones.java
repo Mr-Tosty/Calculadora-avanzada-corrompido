@@ -539,7 +539,7 @@ public class BasicoOperaciones {
         private int VDi4;
         private int VDi5;
         private int VDi6;
-        public  Digitos(int VDi1, VDi2, VDi3, VDi4, VDi5, VDi6){
+        public  Digitos(int VDi1, int VDi2, int VDi3, int VDi4, int VDi5, int VDi6){
             //Variable Digitos 1-6
             this.VDi1 = VDi1;
             this.VDi2 = VDi2;
