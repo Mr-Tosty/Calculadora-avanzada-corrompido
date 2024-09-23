@@ -21,7 +21,7 @@ public class AnaliticaOperaciones{
     //Clase para la base punto distacia
     public abstract class PuntoDistancia{
         //Variable Coordenas Punto Distancia
-        protected int = VCPD;
+        protected VCPD;
         public PuntoDistancia(int VCPD){
             this.VCPD = VCPD;
         }

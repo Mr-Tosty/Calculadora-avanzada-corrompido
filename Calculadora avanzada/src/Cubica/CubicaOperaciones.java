@@ -4,16 +4,16 @@ public class CubicaOperaciones{
     public abstract class Cubo{
         //Variable Lado Cuadrado A
         protected int VLCA;
-        public Cuadrado(int VLCA){
+        public Cubo(int VLCA){
             this.VLCA = VLCA;
         }
-        public abstract int cubo();//Metodo abstracto cuadrado
+        public abstract int cubo();//Metodo abstracto cubo
     }
     //Clase para la base cono
     public abstract class Cono{
         //Variable Lado Cono A
         protected int VLCoA;
-        public Cuadrado(int VLCoA){
+        public Cono(int VLCoA){
             this.VLCoA = VLCoA;
         }
         public abstract int cono();//Metodo abstracto cono
@@ -31,7 +31,7 @@ public class CubicaOperaciones{
     public abstract class Cilindro{
         //Variable Lado Cilindro A
         protected int VLCiA;
-        public Esfera(int VLCiA){
+        public Cilindro(int VLCiA){
             this.VLCiA = VLCiA;
         }
         public abstract int cilindro();//Metodo abstracto Cilindro
@@ -79,7 +79,7 @@ public class CubicaOperaciones{
         public PrismaOctagonal(int VLPoA){
             this.VLPoA = VLPoA;
         }
-        public abstract int prismaoctagonal();//Metodo abstracto prisma pentagonal
+        public abstract int prismaoctagonal();//Metodo abstracto prisma octagonal
     }
     //Clase para la base piramide cuadrado
     public abstract class PiramideCuadrado{
@@ -112,7 +112,7 @@ public class CubicaOperaciones{
     public abstract class PiramideOctagonal{
         //Variable Lado Piramide octagonal A
         protected int VLPioA;
-        public PiramideOctangular(int VLPioA){
+        public PiramideOctagonal(int VLPioA){
             this.VLPioA = VLPioA;
         }
         public abstract int piramideoctagonal();//Metodo abstracto piramide octagonal
