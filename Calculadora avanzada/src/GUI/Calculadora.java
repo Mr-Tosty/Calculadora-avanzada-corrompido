@@ -10,11 +10,6 @@
  */
 
 package calculadora;
-
-/**
- *
- * @author Lab01pc50
- */
 public class Calculadora extends javax.swing.JFrame {
 
     /** Creates new form Calculadora */
