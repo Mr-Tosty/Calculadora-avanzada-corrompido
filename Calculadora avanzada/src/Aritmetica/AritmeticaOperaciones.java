@@ -11,6 +11,9 @@ public class AritmeticaOperaciones{
         protected int VSFD2;
         protected int VSFD3;
         public FraccionSuma(int VSFN1, int VSFN2, int VSFN3, int VSFD1, int VSFD2, int VSFD3){
+            if (VSFD1 == 0 || VSFD2 == 0 || VSFD3 == 0){
+                throw new IllegalArgumentException("Ningun denominador debe ser a 0");
+            }
             this.VSFN1 = VSFN1;
             this.VSFN2 = VSFN2;
             this.VSFN3 = VSFN3;
@@ -19,6 +22,20 @@ public class AritmeticaOperaciones{
             this.VSFD3 = VSFD3;
         }
         public abstract int fraccionsumar();//Metodo abstracto de sumar fracciones
+        public abstract double fraccionsumarcomun();//Metodo abstracto de sumar fracciones comunes
+    }   
+    //Clase para sumar 3 variables de fraccion comun
+    public class RSFV3C extends FraccionSuma{
+        public RSFV3C (int VSFN1, int VSFN2, int VSFN3, int VSFD1, int VSFD2, int VSFD3){
+            super(VSFN1, VSFN2, VSFN3, VSFD1, VSFD2, VSFD3);
+        }
+        @Override
+        public int fraccionsumarcomun(){
+            //Variable Suma Fraccion Procedimiento 1-2 Alternativa 1
+            VSFP1A1 = VSFN1 + VSFN2 + VSFN3;
+            VSFP2A1 = VSFD1;
+            return (double) VSFP1A1 / VSFP2A1;
+        }
     }
     //Clase para sumar 3 variables de fraccion
     public class RSFV3 extends FraccionSuma{
@@ -27,7 +44,12 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int fraccionsumar(){
-            
+            //Variable Suma Fraccion Procedimiento 1 - 3 Alternativa 2
+            VSFP1A2 = VSFN1 * VSFD2 * VSFN3;
+            VSFP1A2 = VSFD1 * VSFN2 * VSFD3;
+            VSFP1A2 = VSFD1 * VSFD2 * VSFP3;
+            VSFP1A2 = VSFPA1 + VSFPA2;
+            return VSFP1A2, VSFP2A2, VSFP3A2, VSFP4A2;
         }
     }
     //Clase para sumar 2 variables de fraccion
@@ -59,9 +81,31 @@ public class AritmeticaOperaciones{
             this.VRFD3 = VRFD3;
         }
         public abstract int fraccionrestar();//Metodo abstracto de restar fracciones
+        public abstract double fraccionrestarcomun();//Metodo asbtracto restar fracciones comun
     }
     //Clase para restar 3 variables de fraccion
+    public class RRFV3C extends FraccionResta{
+        public RRFV3C (int VRFN1, int VRFN2, int VRFN3, int VRFD1, int VRFD2, int VRFD3){
+            super(VRFN1, VRFN2, VRFN3, VRFD1, VRFD2, VRFD3);
+        }
+        @Override
+        public int fraccionrestarcomun(){
+            //Variable Resta Fraccion Procedimiento 1-2 Alternativa 1
+            VRFP1A1 = VRFN1 - VRFN2 - VRFN3;
+            VRFP2A1 = VRFD1;
+            return (double) VRFP1A1 / VRFP2A1;
+        }
+    }
     //Clase para restar 2 variables de fraccion
+    public class RRFV2 extends FraccionResta{
+        public RRFV2 (int VRFN1, int VRFN2, int VRFD1, int VRFD2){
+            super(VRFN1, VRFN2, 0, VRFD1, VRFD2, 0);
+        }
+        @Override
+        public int fraccionrestar(){
+            
+        }
+    }
     //Clase base para la fraccion Multiplicacion
     public abstract class FraccionMultiplicacion{
         //Variable Multiplicacion Fraccion Numerador 1-3
@@ -83,7 +127,25 @@ public class AritmeticaOperaciones{
         public abstract int fraccionmultiplicar();//Metodo abstracto de multiplicar fracciones
     }
     //Clase para multiplicar 3 variables de fraccion
+    public class RMFV3 extends FraccionMultiplicacion{
+        public RMFV3 (int VMFN1, int VMFN2, int VMFN3, int VMFD1, int VMFD2, int VMFD3){
+            super(VMFN1, VMFN2, VMFN3, VMFD1, VMFD2, VMFD3);
+        }
+        @Override
+        public int fraccionmultiplicar(){
+            
+        }
+    }
     //Clase para multiplicar 2 variables de fraccion
+    public class RMFV2 extends FraccionMultiplicacion{
+        public RMFV2 (int VMFN1, int VMFN2, int VMFD1, int VMFD2){
+            super(VMFN1, VMFN2, 0, VMFD1, VMFD2, 0);
+        }
+        @Override
+        public int fraccionmultiplicar(){
+            
+        }
+    }
     //Clase base para la fraccion Division
     public abstract class FraccionDivision{
         //Variable Division Fraccion Numerador 1-3
@@ -105,5 +167,23 @@ public class AritmeticaOperaciones{
         public abstract int fracciondividir();//Metodo abstracto de multiplicar fracciones
     }
     //Clase para dividir 3 variables de fraccion
+    public class RDFV3 extends FraccionSuma{
+        public RDFV3 (int VDFN1, int VDFN2, int VDFN3, int VDFD1, int VDFD2, int VDFD3){
+            super(VDFN1, VDFN2, VDFN3, VDFD1, VDFD2, VDFD3);
+        }
+        @Override
+        public int fraccionmultiplicar(){
+            
+        }
+    }
     //Clase para dividir 2 variables de fraccion
+    public class RDFV2 extends FraccionSuma{
+        public RDFV2 (int VDFN1, int VDFN2, int VDFD1, int VDFD2){
+            super(VDFN1, VDFN2, 0, VDFD1, VDFD2, 0);
+        }
+        @Override
+        public int fraccionmultiplicar(){
+            
+        }
+    }
 }

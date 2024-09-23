@@ -9,7 +9,7 @@
  * Created on 5/09/2024, 06:47:02 PM
  */
 
-package calculadora;
+package GUI;
 public class Calculadora extends javax.swing.JFrame {
 
     /** Creates new form Calculadora */
