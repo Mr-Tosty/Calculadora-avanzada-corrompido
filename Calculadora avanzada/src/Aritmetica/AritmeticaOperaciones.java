@@ -34,7 +34,7 @@ public class AritmeticaOperaciones{
             //Variable Suma Fraccion Procedimiento 1-2 Alternativa 1
             int VSFP1A1 = VSFN1 + VSFN2 + VSFN3;
             int VSFP2A1 = VSFD1;
-            return VSFP1A1 / VSFP2A1;
+            return VSFP1A1, VSFP2A1;
         }
     }
     //Clase para sumar 3 variables de fraccion
@@ -50,6 +50,16 @@ public class AritmeticaOperaciones{
             int VSFP3A2 = VSFD1 * VSFD2 * VSFP3;
             int VSFP4A2 = VSFP1A2 + VSFP2A2;
             return VSFP1A2, VSFP2A2, VSFP3A2, VSFP4A2;
+        }
+    }
+    //Clase para sumar 2 variables de fraccion comun
+    public class RSFV2C extends FraccionSuma{
+        public RSFV2C (int VSFN1, int VSFN2, int VSFD1, int VSFD2){
+            super(VSFN1, VSFN2, 0, VSFD1, VSFD2, 0);
+        }
+        @Override
+        public int fraccionsumarcomun(){
+            
         }
     }
     //Clase para sumar 2 variables de fraccion
@@ -93,7 +103,32 @@ public class AritmeticaOperaciones{
             //Variable Resta Fraccion Procedimiento 1-2 Alternativa 1
             int VRFP1A1 = VRFN1 - VRFN2 - VRFN3;
             int VRFP2A1 = VRFD1;
-            return VRFP1A1 / VRFP2A1;
+            return VRFP1A1, VRFP2A1;
+        }
+    }
+    //Clase para retsar 3 variables de fraccion
+    public class RRFV3C extends FraccionResta{
+        public RRFV3C (int VRFN1, int VRFN2, int VRFN3, int VRFD1, int VRFD2, int VRFD3){
+            super(VRFN1, VRFN2, VRFN3, VRFD1, VRFD2, VRFD3);
+        }
+        @Override
+        public int fraccionrestar(){
+            //Variable Resta Fraccion Procedimiento 1 - 3 Alternativa 2
+            int VRFP1A2 = VRFN1 * VRFD2 * VRFN3;
+            int VRFP2A2 = VRFD1 * VRFN2 * VRFD3;
+            int VRFP3A2 = VRFD1 * VRFD2 * VRFP3;
+            int VRFP4A2 = VRFP1A2 - VRFP2A2;
+            return VRFP1A2, VRFP2A2, VRFP3A2, VRFP4A2;
+        }
+    }
+    //Clase para restar 2 variables de fraccion comun
+    public class RRFV2C extends FraccionResta{
+        public RRFV2C (int VRFN1, int VRFN2, int VRFD1, int VRFD2){
+            super(VRFN1, VRFN2, 0, VRFD1, VRFD2, 0);
+        }
+        @Override
+        public int fraccionrestar(){
+            
         }
     }
     //Clase para restar 2 variables de fraccion
