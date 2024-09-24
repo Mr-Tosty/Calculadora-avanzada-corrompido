@@ -22,7 +22,7 @@ public class AritmeticaOperaciones{
             this.VSFD3 = VSFD3;
         }
         public abstract int fraccionsumar();//Metodo abstracto de sumar fracciones
-        public abstract double fraccionsumarcomun();//Metodo abstracto de sumar fracciones comunes
+        public abstract int fraccionsumarcomun();//Metodo abstracto de sumar fracciones comunes
     }   
     //Clase para sumar 3 variables de fraccion comun
     public class RSFV3C extends FraccionSuma{
@@ -32,9 +32,9 @@ public class AritmeticaOperaciones{
         @Override
         public int fraccionsumarcomun(){
             //Variable Suma Fraccion Procedimiento 1-2 Alternativa 1
-            VSFP1A1 = VSFN1 + VSFN2 + VSFN3;
-            VSFP2A1 = VSFD1;
-            return (double) VSFP1A1 / VSFP2A1;
+            int VSFP1A1 = VSFN1 + VSFN2 + VSFN3;
+            int VSFP2A1 = VSFD1;
+            return VSFP1A1 / VSFP2A1;
         }
     }
     //Clase para sumar 3 variables de fraccion
@@ -45,10 +45,10 @@ public class AritmeticaOperaciones{
         @Override
         public int fraccionsumar(){
             //Variable Suma Fraccion Procedimiento 1 - 3 Alternativa 2
-            VSFP1A2 = VSFN1 * VSFD2 * VSFN3;
-            VSFP1A2 = VSFD1 * VSFN2 * VSFD3;
-            VSFP1A2 = VSFD1 * VSFD2 * VSFP3;
-            VSFP1A2 = VSFPA1 + VSFPA2;
+            int VSFP1A2 = VSFN1 * VSFD2 * VSFN3;
+            int VSFP2A2 = VSFD1 * VSFN2 * VSFD3;
+            int VSFP3A2 = VSFD1 * VSFD2 * VSFP3;
+            int VSFP4A2 = VSFP1A2 + VSFP2A2;
             return VSFP1A2, VSFP2A2, VSFP3A2, VSFP4A2;
         }
     }
@@ -81,9 +81,9 @@ public class AritmeticaOperaciones{
             this.VRFD3 = VRFD3;
         }
         public abstract int fraccionrestar();//Metodo abstracto de restar fracciones
-        public abstract double fraccionrestarcomun();//Metodo asbtracto restar fracciones comun
+        public abstract int fraccionrestarcomun();//Metodo asbtracto restar fracciones comun
     }
-    //Clase para restar 3 variables de fraccion
+    //Clase para restar 3 variables de fraccion comun
     public class RRFV3C extends FraccionResta{
         public RRFV3C (int VRFN1, int VRFN2, int VRFN3, int VRFD1, int VRFD2, int VRFD3){
             super(VRFN1, VRFN2, VRFN3, VRFD1, VRFD2, VRFD3);
@@ -91,9 +91,9 @@ public class AritmeticaOperaciones{
         @Override
         public int fraccionrestarcomun(){
             //Variable Resta Fraccion Procedimiento 1-2 Alternativa 1
-            VRFP1A1 = VRFN1 - VRFN2 - VRFN3;
-            VRFP2A1 = VRFD1;
-            return (double) VRFP1A1 / VRFP2A1;
+            int VRFP1A1 = VRFN1 - VRFN2 - VRFN3;
+            int VRFP2A1 = VRFD1;
+            return VRFP1A1 / VRFP2A1;
         }
     }
     //Clase para restar 2 variables de fraccion
