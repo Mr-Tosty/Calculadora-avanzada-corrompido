@@ -1,6 +1,6 @@
 package Basico;
-import java.util.ArrayList;
-import java.util.List;
+import dependencies.java.util.ArrayList;
+import dependencies.java.util.List;
 public class BasicoOperaciones {
     // Clase base para la suma de variables
     public abstract class Suma {

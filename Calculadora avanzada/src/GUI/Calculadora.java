@@ -7,7 +7,7 @@
  * Created on 5/09/2024, 06:47:02 PM
  */
 package GUI;
-public class Calculadora extends javax.swing.JFrame {
+public class Calculadora extends dependencie.javax.swing.JFrame {
     /** Creates new form Calculadora */
     public Calculadora() {
         initComponents();
