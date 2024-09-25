@@ -576,7 +576,7 @@ public class BasicoOperaciones {
         public List<Integer> digitos(){
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
-            cantidadDigitos.add(String.valueOf(Math.abs(super,getVDi2())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi3())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi4())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi5())).length());
@@ -592,7 +592,7 @@ public class BasicoOperaciones {
         public List<Integer> digitos(){
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
-            cantidadDigitos.add(String.valueOf(Math.abs(super,getVDi2())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi3())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi4())).length());
             return cantidadDigitos;
@@ -607,7 +607,7 @@ public class BasicoOperaciones {
         public List<Integer> digitos(){
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
-            cantidadDigitos.add(String.valueOf(Math.abs(super,getVDi2())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi3())).length());
             return cantidadDigitos;
         }
@@ -621,7 +621,7 @@ public class BasicoOperaciones {
         public List<Integer> digitos(){
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
-            cantidadDigitos.add(String.valueOf(Math.abs(super,getVDi2())).length());
+            cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
             return cantidadDigitos;
         }
     }
