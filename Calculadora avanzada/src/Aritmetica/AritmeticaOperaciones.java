@@ -21,8 +21,8 @@ public class AritmeticaOperaciones{
             this.VSFD2 = VSFD2;
             this.VSFD3 = VSFD3;
         }
-        public abstract int fraccionsumar();//Metodo abstracto de sumar fracciones
-        public abstract int fraccionsumarcomun();//Metodo abstracto de sumar fracciones comunes
+        public abstract int[] fraccionsumar();//Metodo abstracto de sumar fracciones
+        public abstract int[] fraccionsumarcomun();//Metodo abstracto de sumar fracciones comunes
     }   
     //Clase para sumar 3 variables de fraccion comun
     public class RSFV3C extends FraccionSuma{
@@ -30,11 +30,12 @@ public class AritmeticaOperaciones{
             super(VSFN1, VSFN2, VSFN3, VSFD1, VSFD2, VSFD3);
         }
         @Override
-        public int fraccionsumarcomun(){
+        public int[] fraccionsumarcomun(){
             //Variable Suma Fraccion Procedimiento 1-2 Alternativa 1
             int VSFP1A1 = VSFN1 + VSFN2 + VSFN3;
             int VSFP2A1 = VSFD1;
-            return VSFP1A1, VSFP2A1;
+            System.out.println("Suma de fraccion de 3 fracciones y 6 variables");
+            return new int [] {VSFP1A1, VSFP2A1};
         }
     }
     //Clase para sumar 3 variables de fraccion
@@ -43,13 +44,14 @@ public class AritmeticaOperaciones{
             super(VSFN1, VSFN2, VSFN3, VSFD1, VSFD2, VSFD3);
         }
         @Override
-        public int fraccionsumar(){
+        public int[] fraccionsumar(){
             //Variable Suma Fraccion Procedimiento 1 - 3 Alternativa 2
             int VSFP1A2 = VSFN1 * VSFD2 * VSFN3;
             int VSFP2A2 = VSFD1 * VSFN2 * VSFD3;
-            int VSFP3A2 = VSFD1 * VSFD2 * VSFP3;
+            int VSFP3A2 = VSFD1 * VSFD2 * VSFN1;
             int VSFP4A2 = VSFP1A2 + VSFP2A2;
-            return VSFP1A2, VSFP2A2, VSFP3A2, VSFP4A2;
+            Sytem.out.println("Suma de fraccion comun de 3 fracciones y 6 variables");
+            return new int[] {VSFP1A2, VSFP2A2, VSFP3A2, VSFP4A2};
         }
     }
     //Clase para sumar 2 variables de fraccion comun
@@ -58,8 +60,8 @@ public class AritmeticaOperaciones{
             super(VSFN1, VSFN2, 0, VSFD1, VSFD2, 0);
         }
         @Override
-        public int fraccionsumarcomun(){
-            
+        public int[] fraccionsumarcomun(){
+            Ssytem.out.println("Suma de fraccion de 2 fracciones y 4 variables");
         }
     }
     //Clase para sumar 2 variables de fraccion
@@ -68,8 +70,8 @@ public class AritmeticaOperaciones{
             super(VSFN1, VSFN2, 0, VSFD1, VSFD2, 0);
         }
         @Override
-        public int fraccionsumar(){
-            
+        public int[] fraccionsumar(){
+            Sytem.out.println("Suma de fraccion comun de 2 fracciones y 4 variables");
         }
     }
     //Clase base para la fraccion Resta
@@ -90,8 +92,8 @@ public class AritmeticaOperaciones{
             this.VRFD2 = VRFD2;
             this.VRFD3 = VRFD3;
         }
-        public abstract int fraccionrestar();//Metodo abstracto de restar fracciones
-        public abstract int fraccionrestarcomun();//Metodo asbtracto restar fracciones comun
+        public abstract int[] fraccionrestar();//Metodo abstracto de restar fracciones
+        public abstract int[] fraccionrestarcomun();//Metodo asbtracto restar fracciones comun
     }
     //Clase para restar 3 variables de fraccion comun
     public class RRFV3C extends FraccionResta{
@@ -99,11 +101,12 @@ public class AritmeticaOperaciones{
             super(VRFN1, VRFN2, VRFN3, VRFD1, VRFD2, VRFD3);
         }
         @Override
-        public int fraccionrestar(){
+        public int[] fraccionrestar(){
             //Variable Resta Fraccion Procedimiento 1-2 Alternativa 1
             int VRFP1A1 = VRFN1 - VRFN2 - VRFN3;
             int VRFP2A1 = VRFD1;
-            return VRFP1A1, VRFP2A1;
+            Sytem.out.println("Resta de fraccion de 3 fracciones y 6 variables");
+            return new int[] {VRFP1A1, VRFP2A1};
         }
     }
     //Clase para retsar 3 variables de fraccion
@@ -112,13 +115,14 @@ public class AritmeticaOperaciones{
             super(VRFN1, VRFN2, VRFN3, VRFD1, VRFD2, VRFD3);
         }
         @Override
-        public int fraccionrestar(){
+        public int[] fraccionrestar(){
             //Variable Resta Fraccion Procedimiento 1 - 3 Alternativa 2
             int VRFP1A2 = VRFN1 * VRFD2 * VRFN3;
             int VRFP2A2 = VRFD1 * VRFN2 * VRFD3;
             int VRFP3A2 = VRFD1 * VRFD2 * VRFP3;
             int VRFP4A2 = VRFP1A2 - VRFP2A2;
-            return VRFP1A2, VRFP2A2, VRFP3A2, VRFP4A2;
+            Sytem.out.println("Resta de fraccion comun de 3 fracciones y 6 variables");
+            return new int [] {VRFP1A2, VRFP2A2, VRFP3A2, VRFP4A2};
         }
     }
     //Clase para restar 2 variables de fraccion comun
@@ -127,8 +131,8 @@ public class AritmeticaOperaciones{
             super(VRFN1, VRFN2, 0, VRFD1, VRFD2, 0);
         }
         @Override
-        public int fraccionrestarcomun(){
-            
+        public int[] fraccionrestarcomun(){
+            System.out.println("Resta de fraccion de 2 fracciones y 4 variables");
         }
     }
     //Clase para restar 2 variables de fraccion
@@ -137,8 +141,8 @@ public class AritmeticaOperaciones{
             super(VRFN1, VRFN2, 0, VRFD1, VRFD2, 0);
         }
         @Override
-        public int fraccionrestar(){
-            
+        public int[] fraccionrestar(){
+            System.out.println("Resta de fraccion comun de 2 fracciones y 4 variables");
         }
     }
     //Clase base para la fraccion Multiplicacion
@@ -159,7 +163,7 @@ public class AritmeticaOperaciones{
             this.VMFD2 = VMFD2;
             this.VMFD3 = VMFD3;
         }
-        public abstract int fraccionmultiplicar();//Metodo abstracto de multiplicar fracciones
+        public abstract int[] fraccionmultiplicar();//Metodo abstracto de multiplicar fracciones
     }
     //Clase para multiplicar 3 variables de fraccion
     public class RMFV3 extends FraccionMultiplicacion{
@@ -167,8 +171,8 @@ public class AritmeticaOperaciones{
             super(VMFN1, VMFN2, VMFN3, VMFD1, VMFD2, VMFD3);
         }
         @Override
-        public int fraccionmultiplicar(){
-            
+        public int[] fraccionmultiplicar(){
+            Sytem.out.println("Multiplicacion de fraccion de 3 fracciones y 6 variables");
         }
     }
     //Clase para multiplicar 2 variables de fraccion
@@ -177,8 +181,8 @@ public class AritmeticaOperaciones{
             super(VMFN1, VMFN2, 0, VMFD1, VMFD2, 0);
         }
         @Override
-        public int fraccionmultiplicar(){
-            
+        public int[] fraccionmultiplicar(){
+            Sytem.out.println("Multiplicacion de fraccion de 2 fracciones y 4 variables");
         }
     }
     //Clase base para la fraccion Division
@@ -199,7 +203,7 @@ public class AritmeticaOperaciones{
             this.VDFD2 = VDFD2;
             this.VDFD3 = VDFD3;
         }
-        public abstract int fracciondividir();//Metodo abstracto de multiplicar fracciones
+        public abstract int[] fracciondividir();//Metodo abstracto de multiplicar fracciones
     }
     //Clase para dividir 3 variables de fraccion
     public class RDFV3 extends FraccionDivision{
@@ -207,8 +211,8 @@ public class AritmeticaOperaciones{
             super(VDFN1, VDFN2, VDFN3, VDFD1, VDFD2, VDFD3);
         }
         @Override
-        public int fracciondividir(){
-            
+        public int[] fracciondividir(){
+            Sytem.out.println("Division de fraccion de 3 fracciones y 6 variables");
         }
     }
     //Clase para dividir 2 variables de fraccion
@@ -217,8 +221,8 @@ public class AritmeticaOperaciones{
             super(VDFN1, VDFN2, 0, VDFD1, VDFD2, 0);
         }
         @Override
-        public int fracciondividir(){
-            
+        public int[] fracciondividir(){
+            Sytem.out.println("Division de fraccion de 2 fracciones y 4 variables");
         }
     }
 }

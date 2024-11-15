@@ -637,7 +637,7 @@ public class BasicoOperaciones {
         }
         @Override
         public List<Integer> digitos(){
-            Ssytem.out.println("Cantidad de digitos 1 variable");
+            Sytem.out.println("Cantidad de digitos 1 variable");
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
             return cantidadDigitos;
