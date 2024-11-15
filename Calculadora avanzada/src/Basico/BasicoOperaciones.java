@@ -557,6 +557,7 @@ public class BasicoOperaciones {
         }
         @Override
         public List<Integer> digitos(){
+            System.out.println("Cantidad de digitos 6 variables");
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.ValueOf(Math.abs(super.getDVi1())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
@@ -574,6 +575,7 @@ public class BasicoOperaciones {
         }
         @Override
         public List<Integer> digitos(){
+            System.out.println("Cantidad de digitos 5 variabes");
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
@@ -590,6 +592,7 @@ public class BasicoOperaciones {
         }
         @Override
         public List<Integer> digitos(){
+            Sytem.out.println("Cantidad de digitos 4 variables");
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
@@ -605,6 +608,7 @@ public class BasicoOperaciones {
         }
         @Override
         public List<Integer> digitos(){
+            Sytem.out.println("Cantidad de digitos 3 variables");
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
@@ -619,6 +623,7 @@ public class BasicoOperaciones {
         }
         @Override
         public List<Integer> digitos(){
+            Sytem.out.println.("Cantidad de digitos 2 variables");
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
             cantidadDigitos.add(String.valueOf(Math.abs(super.getVDi2())).length());
@@ -632,6 +637,7 @@ public class BasicoOperaciones {
         }
         @Override
         public List<Integer> digitos(){
+            Ssytem.out.println("Cantidad de digitos 1 variable");
             List<Integer> cantidadDigitos = new ArrayList<>();
             cantidadDigitos.add(String.valueOf(Math.abs(super.getDVi1())).length());
             return cantidadDigitos;
