@@ -1,6 +1,7 @@
 package Basico;
-import dependencies.java.util.ArrayList;
-import dependencies.java.util.List;
+import java.util.ArrayList;
+import java.util.List;
+import javax.swing.JOptionPane;
 public class BasicoOperaciones {
     // Clase base para la suma de variables
     public abstract class Suma {
@@ -251,10 +252,15 @@ public class BasicoOperaciones {
         @Override
         public int dividir(){
             if (VD2 == 0 || VD3 == 0 || VD4 == 0 || VD5 == 0 || VD6 == 0) {
+                System.out.println("Invalido la division");
+                JOptionPane.showMessageDialog(null, "Error: No se debe dividir entre 0",
+                    "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");
+                return -1;
+            }else{
+                System.out.println("Division de 6 variables");
+                return VD1 / VD2 / VD3 / VD4 / VD5 / VD6;
             }
-            System.out.println("Division de 6 variables");
-            return VD1 / VD2 / VD3 / VD4 / VD5 / VD6;
         }
     }
     //Clase para dividir 5 variables
@@ -265,10 +271,15 @@ public class BasicoOperaciones {
         @Override
         public int dividir(){
             if (VD2 == 0 || VD3 == 0 || VD4 == 0 || VD5 == 0){
+                Ssytem.out.printn("Invalida la division");
+                JOptionPane.showMessageDialog(null, "No se debe dividir entre 0",
+                    "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");
-            }
+                return -1;
+            }else{
             System.out.println("Division de 5 variables");
             return VD1 / VD2 / VD3 / VD4 / VD5;
+            }
         }
     }
     //Clase para dividir 4 variables
@@ -279,10 +290,16 @@ public class BasicoOperaciones {
         @Override
         public int dividir(){
             if(VD2 == 0 || VD3 == 0 || VD4 == 0){
+                System.out.println("Invalido la division");
+                JOptionPane.showMessageDialog(null, "No se deve dividir entre 0",
+                    "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");
+                return -1;
+            }else{
+                System.out.println("Division de 4 variables");
+                return VD1 / VD2 / VD4 / VD3 / VD4;
             }
-            System.out.println("Division de 4 variables");
-            return VD1 / VD2 / VD4 / VD3 / VD4;
+            
         }
     }
     //Clase para dividir 3 variables
@@ -293,10 +310,15 @@ public class BasicoOperaciones {
         @Override
         public int dividir(){
             if(VD2 == 0 || VD3 == 0){
+                System.out.println("Invalido la division");
+                JOptionPane.showMessageDialog(null, "No se debe dividir entre 0",
+                    "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");
+                return -1;
+            }else{
+                System.out.println("Division de 3 variables");
+                return VD1 / VD2 / VD3 / VD3;
             }
-            System.out.println("Division de 3 variables");
-            return VD1 / VD2 / VD3 / VD3;
         }
     }
     //Clase para dividir 2 variables
@@ -306,11 +328,17 @@ public class BasicoOperaciones {
         }
         @Override
         public int dividir(){
-            if(VD2 == 0){
+            if(VD2 == 0){Ssytem.out.println();
+                Sytem.out.println("Invalida la difivion");
+                JOptionPane.showMessageDialog(null, "No se debe dividir entre 0",
+                    "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");
+                return -1;
+            }else{
+                System.out.println("Division de 2 variables");
+                return VD1 / VD2;
             }
-            System.out.println("Division de 2 variables");
-            return VD1 / VD2;
+            
         }
     }
     //CLase para la base de redondeo

@@ -172,7 +172,7 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionmultiplicar(){
-            Sytem.out.println("Multiplicacion de fraccion de 3 fracciones y 6 variables");
+            System.out.println("Multiplicacion de fraccion de 3 fracciones y 6 variables");
         }
     }
     //Clase para multiplicar 2 variables de fraccion
@@ -182,7 +182,7 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionmultiplicar(){
-            Sytem.out.println("Multiplicacion de fraccion de 2 fracciones y 4 variables");
+            System.out.println("Multiplicacion de fraccion de 2 fracciones y 4 variables");
         }
     }
     //Clase base para la fraccion Division
@@ -212,7 +212,7 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fracciondividir(){
-            Sytem.out.println("Division de fraccion de 3 fracciones y 6 variables");
+            System.out.println("Division de fraccion de 3 fracciones y 6 variables");
         }
     }
     //Clase para dividir 2 variables de fraccion
@@ -222,7 +222,7 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fracciondividir(){
-            Sytem.out.println("Division de fraccion de 2 fracciones y 4 variables");
+            System.out.println("Division de fraccion de 2 fracciones y 4 variables");
         }
     }
     //Clase para la tabla de multiplicar
@@ -270,9 +270,11 @@ public class AritmeticaOperaciones{
                 }
                 return new int[] {RTMO, TMR, VTMB};
             }else{
-                Sytem.out.println("Es invalido el multiplicador");
+                System.out.println("Es invalido el multiplicador");
+                JOptionPane.showMessageDialog(null, "No se puede dividir entre 0",
+                    "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");
-                return - 1;
+                return -1;
             }
         }
     }
