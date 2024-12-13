@@ -34,7 +34,7 @@ public class AritmeticaOperaciones{
             //Variable Suma Fraccion Procedimiento 1-2 Alternativa 1
             int VSFP1A1 = VSFN1 + VSFN2 + VSFN3;
             int VSFP2A1 = VSFD1;
-            System.out.println("Suma de fraccion de 3 fracciones y 6 variables");
+            System.out.println("Suma de fraccion comun de 3 fracciones y 6 variables");
             return new int [] {VSFP1A1, VSFP2A1};
         }
     }
@@ -45,12 +45,12 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionsumar(){
-            //Variable Suma Fraccion Procedimiento 1 - 3 Alternativa 2
+            //Variable Suma Fraccion Procedimiento 1 - 4 Alternativa 2
             int VSFP1A2 = VSFN1 * VSFD2 * VSFN3;
             int VSFP2A2 = VSFD1 * VSFN2 * VSFD3;
-            int VSFP3A2 = VSFD1 * VSFD2 * VSFN1;
+            int VSFP3A2 = VSFD1 * VSFD2 * VSFD1;
             int VSFP4A2 = VSFP1A2 + VSFP2A2;
-            Sytem.out.println("Suma de fraccion comun de 3 fracciones y 6 variables");
+            Sytem.out.println("Suma de fraccion de 3 fracciones y 6 variables");
             return new int[] {VSFP1A2, VSFP2A2, VSFP3A2, VSFP4A2};
         }
     }
@@ -61,7 +61,11 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionsumarcomun(){
-            Ssytem.out.println("Suma de fraccion de 2 fracciones y 4 variables");
+            //Variable Suma Fraccion Procedimieto 1 - 2 Alternativa 1
+            int VSFP1A2 = VSFN1 + VSFN2;
+            int VSFP2A2 = VSFD1;
+            Sytem.out.println("Suma de fraccion de 2 fracciones y 4 variables");
+            return new int []{VSFP1A2 , VSFP2A2};
         }
     }
     //Clase para sumar 2 variables de fraccion
@@ -71,7 +75,13 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionsumar(){
+            //Variable Suma Fraccion Procedimiento 1 - 4 Alternativa 2
+            int VSFP1A2 = VSFN1 * VSFD2;
+            int VSFP2A2 = VSFD1 * VSFN2;
+            int VSFP3A1 = VSFD1 * VSFD2; 
+            int VSFP4A2 = VSFP1A2 + VSFP2A2;
             Sytem.out.println("Suma de fraccion comun de 2 fracciones y 4 variables");
+            return new int []{VSFP1A2, VSFP2A2, VSFP3A2, VSFP4A2};
         }
     }
     //Clase base para la fraccion Resta
@@ -116,7 +126,7 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionrestar(){
-            //Variable Resta Fraccion Procedimiento 1 - 3 Alternativa 2
+            //Variable Resta Fraccion Procedimiento 1 - 4 Alternativa 2
             int VRFP1A2 = VRFN1 * VRFD2 * VRFN3;
             int VRFP2A2 = VRFD1 * VRFN2 * VRFD3;
             int VRFP3A2 = VRFD1 * VRFD2 * VRFP3;
@@ -132,7 +142,11 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionrestarcomun(){
+            //Variable Resta Fraccion Procedimiento 1 - 2 Alternativa 1
+            int VRFP1A1 = VRFN1 - VRFN2;
+            int VRFP2A1 = VRFD1;
             System.out.println("Resta de fraccion de 2 fracciones y 4 variables");
+            return new int []{VRFP2A1};
         }
     }
     //Clase para restar 2 variables de fraccion
@@ -142,7 +156,13 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionrestar(){
+            //Variable Resta Fraccion Procedimiento 1 - 2 Alternativa 2
+            int VRFP1A2 = VRFN1 * VRFD2;
+            int VRFP2A2 = VRFD1 * VRFN2;
+            int VRFP4A2 = VRFD1 * VRFD2;
+            int VRFP3A2 = VRFP1A2 - VRFP2A2;
             System.out.println("Resta de fraccion comun de 2 fracciones y 4 variables");
+            return new int []{VRFP1A2, VRFP2A2, VRFP3A2, VRFP4A2};
         }
     }
     //Clase base para la fraccion Multiplicacion
@@ -172,7 +192,11 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionmultiplicar(){
+            //Variable Multiplicacion Fraccion Procedimiento 1 - 2
+            int VMFP1 = VMFN1 * VMFN2 * VMFN3;
+            INT VMFP2 = VMFD1 * VMFD2 * VMFD3;
             System.out.println("Multiplicacion de fraccion de 3 fracciones y 6 variables");
+            return new int[]{VMFP1, VMFP2};
         }
     }
     //Clase para multiplicar 2 variables de fraccion
@@ -182,7 +206,11 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fraccionmultiplicar(){
+            //Variable Multiplicacion Fraccion Procedimiento 1 - 2
+            int VMFP1 = VMFN1 * VMFN2;
+            int VMFP2 = VMFD1 * VMFD2;
             System.out.println("Multiplicacion de fraccion de 2 fracciones y 4 variables");
+            return new int[]{VMFP1, VMFP2};
         }
     }
     //Clase base para la fraccion Division
@@ -212,7 +240,11 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fracciondividir(){
+            //Variable Division Fraccion Procedimiento 1 - 2
+            int VDFP1 = VDFN1 * VDFD2 * VDFN3;
+            int VDFP2 = VDFD1 * VDFN2 * VDFD3;
             System.out.println("Division de fraccion de 3 fracciones y 6 variables");
+            return new int[]{VDFP1, VDFP2};
         }
     }
     //Clase para dividir 2 variables de fraccion
@@ -222,7 +254,11 @@ public class AritmeticaOperaciones{
         }
         @Override
         public int[] fracciondividir(){
+            //Variable Division Fraccion Procedimiento 1 - 2
+            int VDFP1 = VDFD1 * VDFN2;
+            int VDFP2 = VDFN1 * VDFD2;
             System.out.println("Division de fraccion de 2 fracciones y 4 variables");
+            return new int[]{VDFP1, VDFP2};
         }
     }
     //Clase para la tabla de multiplicar
