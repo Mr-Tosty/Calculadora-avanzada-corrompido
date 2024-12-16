@@ -7,10 +7,31 @@ public class CuadradaOperaciones{
         public Cuadrado(int LCA){
             this.VLCA = VLCA;
         }
-        public abstract int cuadrado();//Metodo abstracto cuadrado
+        public abstract int[] cuadradoarea();//Metodo abstracto cuadrado area
+        public abstract int[] cuadradoperimetro();//Metodo abstracto cuadrado perimetro
     }
     //Clase para el area cuadrado
+    public class RAC extends Cuadrado{
+        public RAC (int VLCA){
+            super(VLCA);            
+        }
+        @Override
+        public int[] cuadradoarea(){
+            System.out.println("Area del cuadrado");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro cuadrado
+    public class RPC extends Cuadrado{
+        public RPC (int VLCA){
+            super(VLCA);
+        }
+        @Override
+        public int[] cuadradoperimetro(){
+            System.out.println("Perimetro del cuadrado");
+            return new int[]{};
+        }
+    } 
     //Clase para la base rectangulo
     public abstract class Rectangulo{
         //Variable Lado Rectangulo A-B
@@ -20,10 +41,31 @@ public class CuadradaOperaciones{
             this.VLRA = VLRA;
             this.VLRB = VLRB;
         }
-        public abstract int rectangulo();//Metodo abstracto rectangulo
+        public abstract int[] rectanguloarea();//Metodo abstracto rectangulo area
+        public abstract int[] rectanguloperimetro();//Metodo abstracto rectanguloperimetro
     }
     //Clase para el area rectangulo
+    public class RRA extends Rectangulo{
+        public RRA (int VLRA, int VLRB){
+            super(VLRA, VLRB);
+        }
+        @Override
+        public int[] cuadradoarea(){
+            System.out.println("Area del rectangulo");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro rectangulo
+    public class RRP extends Rectangulo{
+        public RRP (int VLRA, int VLRB){
+            super(VLRA, VLRB);
+        }
+        @Override
+        public int[] rectanguloperimetro(){
+            System.out.println("Perimetro del rectangulo");
+            return new int[]{};
+        }
+    }
     //Clase para la base triangulo
     public abstract class Triangulo{
         //Variables Lado Triangulo A-B
@@ -33,10 +75,31 @@ public class CuadradaOperaciones{
             this.VLTA = VLTA;
             this.VLTB = VLTB;
         }
-        public abstract int triangulo();//Metodo abstracto triangulo
+        public abstract int[] trianguloarea();//Metodo abstracto triangulo area
+        public abstract int[] trianguloperimetro();//Metodo abstracto triangulo perimetro
     }
     //Clase para el area triangulo
+    public class RTA extends Triangulo{
+        public RTA (int VLTA, int VLTB){
+            super(VLTA, VLTB);
+        }
+        @Override
+        public int[] trianguloarea(){
+            System.out.println("Area del triangulo");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro triangulo
+    public class RTP extends Triangulo{
+        public RTP (int VLTA, int VLTB){
+            super(VLTA, VLTB);
+        }
+        @Override
+        public int[] trianguloperimetro(){
+            System.out.println("Perimetro del triangulo");
+            return new int[]{};
+        }
+    }
     //Clase para la base circulo
     public abstract class Circulo{
         //Variable Radio Circulo
@@ -44,10 +107,31 @@ public class CuadradaOperaciones{
         public Circulo(int VRC){
             this.VRC = VRC;
         }
-        public abstract int circulo();//Metodo abstracto circulo
+        public abstract int[] circuloarea();//Metodo abstracto circulo area
+        public abstract int[] circuloperimetro();//Metodo abstracto circulo perimetro
     }
     //Clase para el area circulo
+    public class RCoA extends Circulo{
+        public RCoA (int VRC){
+            super(VRC);
+        }
+        @Override
+        public int[] circuloarea(){
+            System.out.println("Area del circulo");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro circulo
+    public class RCoP extends Circulo{
+        public RCoP (int VRC){
+            super(VRC);
+        }
+        @Override
+        public int[] circuloperimetro(){
+            System.out.println("Perimetro del circulo");
+            return new int[]{};
+        }
+    }
     //Clase para la base de rombo
     public abstract class Rombo{
         //Variable Rombo Lado D-d
@@ -57,10 +141,31 @@ public class CuadradaOperaciones{
             this.VRLD = VRLD;
             this.VRLd = VRLd;
         }
-        public abstract int rombo();//Metodo abstracto rombo
+        public abstract int[] romboarea();//Metodo abstracto rombo area
+        public abstract int[] romboperimetro();//Metodo abstracto rombo perimetro
     }
-    //Clase para el marea rombo
+    //Clase para el area rombo
+    public class RRoA extends Rombo{
+        public RRoA (int VRLD, int VRLd){
+            super(VRLD, VRLd);
+        }
+        @Override
+        public int[] romboarea(){
+            System.out.println("Area del rombo");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro rombo
+    public class RRoA extends Rombo{
+        public RRoA (int VRLD, int VRLd){
+            super(VRLD, VRLd);
+        }
+        @Override
+        public int[] romboperimetro(){
+            System.out.println("Perimetro del rombo");
+            return new int[]{};
+        }
+    }
     //Clase para la base romboide
     public abstract class Romboide{
         //Variable Romboide Lado A-B
@@ -70,10 +175,31 @@ public class CuadradaOperaciones{
             this.VRoLA = VRoLA;
             this.VRoLB = VRoLB;
         }
-        public abstract int romboide();//Metodo abstracto romboide
+        public abstract int[] romboidearea();//Metodo abstracto romboide area
+        public abstract int[] romboideperimetro();//Metodo abstracto romboide perimetro
     }
     //Clase para el area romboide
+    public class RRmA extends Romboide{
+        public RRmA (int VRoLA, int VRoLB){
+            super(VRoLA, VRoLB);
+        }
+        @Override
+        public int[] romboidearea(){
+            System.out.println("Area romboide");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro romboide
+    public class RRmP extends Romboide{
+        public RRmP (int VRoLA,int VRoLB){
+            super(VRoLA, VRoLB)
+        }
+        @Override
+        public int[] romboideperimetro(){
+            System.out.println("Perimetro romboide");
+            return new int[]{};
+        }
+    }
     //Clase para la base trapecio
     public abstract class Trapecio{
         //Variable Trapecio A-B
@@ -83,10 +209,31 @@ public class CuadradaOperaciones{
             this.VTA = VTA;
             this.VTB = VTB;
         }
-        public abstract int trapecio();//Metodo abstracto trapecio
+        public abstract int[] trapecioarea();//Metodo abstracto trapecio area
+        public abstract int[] trapecioperimetro();//Metodo abstracto trapecio perimetro
     }
     //Clase para el area trapecio
+    public class RTrA extends Trapecio{
+        public RTrA (int VTA, int VTB){
+            super(VTA, VTB);
+        }
+        @Override
+        public int[] trapecioarea(){
+            System.out.println("Area del trapecio");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro trapecio
+    public class RTrP extends Trapecio{
+        public RTrP (int VTA, int VTB){
+            super(VTA, VTB);
+        }
+        @Override
+        public int[] trapecioperimetro(){
+            System.out.println("Perimetro del trapecio");
+            return new int[]{};
+        }
+    }
     //Clase para la base pentagono
     public abstract class Pentagono{
         //Variable Pentagono Lado A-B
@@ -96,10 +243,31 @@ public class CuadradaOperaciones{
             this.VPLA = VPLA;
             this.VPLB = VPLB;
         }
-        public abstract int pentagono();//Metodo abstracto pentagono
+        public abstract int pentagonoarea();//Metodo abstracto pentagono area
+        public abstract int pentagonoperimetro();//Metodo abstracto pentagono perimetro
     }
     //Clase para el area pentagono
+    public class RPA extends Pentagono{
+        public RPA (int VPLA, int VPLB){
+            super(VLPA, VPLB);
+        }
+        @Override
+        public int[] pentagonoarea{
+            System.out.println("Area del pentagono");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro pentagono
+    public class RPP extends Pentagono{
+        public RPP (int VPLA, int VPLB){
+            super(VPLA, VPLB);
+        }
+        @Override 
+        public int[] pentagonoperimetro{
+            System.out.println("Perimetro del pentagono");
+            return new int[]{};
+        }
+    }
     //Clase para la base hexagono
     public abstract class Hexagono{
         //Variable Hexagono Lado A-B
@@ -109,10 +277,31 @@ public class CuadradaOperaciones{
             this.VHLA = VHLA;
             this.VHLB = VHLB;
         }
-        public abstract int hexagono();
+        public abstract int[] hexagonoarea();//Metodo abstracto hexagono area
+        public abstract int[] hexagonoperimetro(); //Metodo abstracto hexagono perimetro
     }
     //Clase para el area hexagono
+    public class RHA extends Hexagono{
+        public RHA (int VHLA, int VHLB){
+            super( VHLA, VHLB);
+        }
+        @Override
+        public int[] hexagonoarea(){
+            System.out.println("Area del hexagono")
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro hexagono
+    public class RHP extends Hexagono{
+        public RHP (int VHLA, int VHLB){
+            super(VHLA, VHLB);
+        }
+        @Override
+        public int[] hexagonoperimetro(){
+            system.out.println("Perimetro del hexagono");
+            return new int[]{};
+        }
+    }
     //Clase para la base deltoide
     public abstract class Deltoide{
         //Variable Deltoide d-D
@@ -122,8 +311,29 @@ public class CuadradaOperaciones{
             this.VDd = VDd;
             this.VDD = VDD;
         }
-        public abstract int deltoide();//Metodo abstracto deltoide
+        public abstract int[] deltoidearea();//Metodo abstracto deltoide area
+        public abstract int[] deltoideperimetro();//Metodo abstracto deltoide perimetro
     }
     //Clase para el area de deltoide
+    public class RDA extends Deltoide{
+        public RDA (int VDd, int VDD){
+            super(VDd, VDD);
+        }
+        @Override
+        public int[] deltoidearea(){
+            System.out.println("Area del deltoide");
+            return new int[]{};
+        }
+    }
     //Clase para el perimetro deltoide
+    public class RDP extends Deltoide{
+        public RDP (int VDd, int VDD){
+            super(VDd, VDd)
+        }
+        @Override
+        public int[] deltoideperimetro(){
+            System.out.println("Perimero del deltoide");
+            return new int[]{}
+        }
+    }
 }
