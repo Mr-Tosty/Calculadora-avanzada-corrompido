@@ -17,8 +17,10 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] cuadradoarea(){
+            //Variable Procedimiento Area Cuadrado 1
+            int VPAC = VLCA * 2;
             System.out.println("Area del cuadrado");
-            return new int[]{};
+            return new int[]{VPAC};
         }
     }
     //Clase para el perimetro cuadrado
@@ -28,8 +30,14 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] cuadradoperimetro(){
+            //Repetir Procedimiento Perimetro Cuadrado
+            //Variable Procedimiento Perimetro Cuadrado
+            int VPPC = 0;
+            for(int RPPC; RPPC <= 4; RPPC++){ 
+                VPPC += VLCA;
+            }
             System.out.println("Perimetro del cuadrado");
-            return new int[]{};
+            return new int[]{VPPC};
         }
     } 
     //Clase para la base rectangulo
@@ -51,8 +59,10 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] cuadradoarea(){
+            //Variable Procedimiento Area Rectangulo
+            int VPAR = VLRA * VLRB;
             System.out.println("Area del rectangulo");
-            return new int[]{};
+            return new int[]{VLRA};
         }
     }
     //Clase para el perimetro rectangulo
@@ -62,8 +72,11 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] rectanguloperimetro(){
+            //Variable Procedimiento Perimetro Rectangulo 1 - 2
+            int VPPR1 = VLRA + VLRB;
+            int VPPR2 = VPPR1 * 2;
             System.out.println("Perimetro del rectangulo");
-            return new int[]{};
+            return new int[]{VPPR1, VPPR2};
         }
     }
     //Clase para la base triangulo
@@ -85,19 +98,28 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] trianguloarea(){
+            //Variable Procedimiento Area Triangulo 1 - 2
+            int VPAT1 = VLTA + VLTB;
+            int VPAT2 = VPAT1 / 2;
             System.out.println("Area del triangulo");
-            return new int[]{};
+            return new int[]{VPAT1, VPAT2};
         }
     }
     //Clase para el perimetro triangulo
     public class RTP extends Triangulo{
         public RTP (int VLTA, int VLTB){
-            super(VLTA, VLTB);
+            super(VLTA, 0);
         }
         @Override
         public int[] trianguloperimetro(){
+            //Repetir Procedimiento Perimetro Triangulo
+            //Variable Procedimiento Perimetro Triangulo
+            int VPPT = 0;
+            for(int RPPT; RPPT <= 3; RPPT++){
+                VPPT += VLTA;
+            }
             System.out.println("Perimetro del triangulo");
-            return new int[]{};
+            return new int[]{VPPT};
         }
     }
     //Clase para la base circulo
