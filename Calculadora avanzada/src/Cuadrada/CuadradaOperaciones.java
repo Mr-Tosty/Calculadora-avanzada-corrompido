@@ -25,8 +25,9 @@ public class CuadradaOperaciones{
     }
     //Clase para el perimetro cuadrado
     public class RPC extends Cuadrado{
-        public RPC (int VLCA){
+        public RPC (int VLCA, int VPPC){
             super(VLCA);
+            this.VPPC = VPPC;
         }
         @Override
         public int[] cuadradoperimetro(){
@@ -107,8 +108,9 @@ public class CuadradaOperaciones{
     }
     //Clase para el perimetro triangulo
     public class RTP extends Triangulo{
-        public RTP (int VLTA, int VLTB){
-            super(VLTA, 0);
+        public RTP (int VLTA, int VLTB, int VPPT){
+            super(VLTA, 0, VPPT);
+            this.VPPT = VPPT;
         }
         @Override
         public int[] trianguloperimetro(){
@@ -139,8 +141,11 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] circuloarea(){
+            //Variable Procedimiento Area Circulo 1 - 2
+            int VPACo1 = Math.pow(VRC, 2);
+            int VPACo2 = VPACo1 * Math.PI;
             System.out.println("Area del circulo");
-            return new int[]{};
+            return new int[]{VPACo1, VPACo2};
         }
     }
     //Clase para el perimetro circulo
@@ -150,8 +155,11 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] circuloperimetro(){
+            //Variable Procedimiento Perimetro Circulo 1 - 3
+            int VPPCo1 = VRC * Math;
+            int VPPCo2 = VPPCo1 * 2;
             System.out.println("Perimetro del circulo");
-            return new int[]{};
+            return new int[]{VPPCo1, VPPCo2};
         }
     }
     //Clase para la base de rombo
@@ -173,85 +181,123 @@ public class CuadradaOperaciones{
         }
         @Override
         public int[] romboarea(){
-            System.out.println("Area del rombo");
-            return new int[]{};
+            //Variable Procedimiento Area Rombo 1 - 2
+            int VPARo1 = VRLD * VRLd;
+            if(VPARo1 == 0){
+                System.out.println("Invalido la division");
+                JOptionPane.showMessageDialog(null, "Error: No se debe dividir entre 0",
+                    "Division invalida", JOptionPane.ERROR_MESSAGE);
+                throw new ArithmeticException("No se puede dividir entre 0");
+                return -1;
+            }else{
+                int VPARo2 = VPARo1 / 2;
+                System.out.println("Area del rombo");
+                return new int[]{VPARo1, VPARo2};
+            }
         }
     }
     //Clase para el perimetro rombo
-    public class RRoA extends Rombo{
-        public RRoA (int VRLD, int VRLd){
-            super(VRLD, VRLd);
+    public class RRoP extends Rombo{
+        public RRoP (int VRLD, int VRLd, int VRL, int VPPRo){
+            super(0, 0, VRL);
+            this.VRL = VRL;
+            this.VPPRo = VPPRo;
         }
         @Override
         public int[] romboperimetro(){
+            //Variable Rombo Lados
+            int VRL;
+            //Repetir Procedimiento Perimetro Rombo
+            //Variable Procedimiento Perimetro Rombo
+            int VPPRo = 0;
+            for(int RPPRo = 0; RPPRo <= 4; RPPRo++){
+                VPPRo += VRL;
+            }
             System.out.println("Perimetro del rombo");
-            return new int[]{};
+            return new int[]{VPPRo};
         }
     }
     //Clase para la base romboide
     public abstract class Romboide{
-        //Variable Romboide Lado A-B
-        protected int VRoLA;
+        //Variable Romboide Lado B-b-h
         protected int VRoLB;
-        public Romboide(int VRoLA, int VRoLB){
-            this.VRoLA = VRoLA;
+        protected int VRoLb;
+        protected int VRoLH;
+        public Romboide(int VRoLB, int VRoLb, int VRoLH){
             this.VRoLB = VRoLB;
+            this.VRoLb = VRoLb;
+            this.VRoLH = VRoLH
         }
         public abstract int[] romboidearea();//Metodo abstracto romboide area
         public abstract int[] romboideperimetro();//Metodo abstracto romboide perimetro
     }
     //Clase para el area romboide
     public class RRmA extends Romboide{
-        public RRmA (int VRoLA, int VRoLB){
-            super(VRoLA, VRoLB);
+        public RRmA (int VRoLB, int VRoLb, int VRoLH){
+            super(VRoLB, VRoLb, VRoLH);
         }
         @Override
         public int[] romboidearea(){
+            //Variable Procedimiento Romboide Area 1 - 3
+            int VPRmA1 = VRoLB + VRoLb;
+            int VPRmA2 = VPRmA1 / 2;
+            int VPRmA3 = VPRmA2 * VRoLH;
             System.out.println("Area romboide");
-            return new int[]{};
+            return new int[]{VPRmA1, VPRmA2, VPRmA3};
         }
     }
     //Clase para el perimetro romboide
     public class RRmP extends Romboide{
-        public RRmP (int VRoLA,int VRoLB){
-            super(VRoLA, VRoLB)
+        public RRmP (int VRoLB,int VRoLb, VRoLH){
+            super(VRoLB, VRoLb, VRoLH);
         }
         @Override
         public int[] romboideperimetro(){
+            //Variable Procedimiento Romboide Perimetro
+            int VPRmP = VRoLB + VRoLb + VRoLH + VRoLH;
             System.out.println("Perimetro romboide");
-            return new int[]{};
+            return new int[]{VPRmP};
         }
     }
     //Clase para la base trapecio
     public abstract class Trapecio{
-        //Variable Trapecio A-B
-        protected int VTA;
+        //Variable Trapecio B-b-H
         protected int VTB;
-        public Trapecio(int VTA, int VTB){
-            this.VTA = VTA;
+        protected int VTb;
+        protected int VTH;
+        public Trapecio(int VTB, int VTb, int VTH){
             this.VTB = VTB;
+            this.VTb = VTb;
+            this.VTH = VTH;
         }
         public abstract int[] trapecioarea();//Metodo abstracto trapecio area
         public abstract int[] trapecioperimetro();//Metodo abstracto trapecio perimetro
     }
     //Clase para el area trapecio
     public class RTrA extends Trapecio{
-        public RTrA (int VTA, int VTB){
-            super(VTA, VTB);
+        public RTrA (int VTB, int VTb, int VTH){
+            super(VTB, VTb, VTH);
         }
         @Override
         public int[] trapecioarea(){
+            //Variable Procedimiento Area Trapecio 1 - 3
+            int VPATr1 = VTB + TVb;
+            int VPATr2 = VPATr1 / 2;
+            int VPATr3 = VTH * VPATr2;
             System.out.println("Area del trapecio");
-            return new int[]{};
+            return new int[]{VPATr1, VPATr2, VPATr3};
         }
     }
     //Clase para el perimetro trapecio
     public class RTrP extends Trapecio{
-        public RTrP (int VTA, int VTB){
-            super(VTA, VTB);
+        public RTrP (int VTB, int VTb, int VTH, int VTBA, int VTa){
+            super(VTB, VTb, 0, VTBA);
+            this.VTa = badValueTag;
         }
         @Override
         public int[] trapecioperimetro(){
+            //Variable Procedimiento Perimetro Trapecio
+            int VPPTr = VTB + VTb + VTa + VTa;
             System.out.println("Perimetro del trapecio");
             return new int[]{};
         }
