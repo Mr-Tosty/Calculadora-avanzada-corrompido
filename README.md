@@ -1,23 +1,69 @@
-# **Calculadora Avanzada**
-## *Descripción*
-> La "Calculadora Avanzada" es una aplicación diseñada para realizar operaciones matemáticas complejas para que llegue al resultado y a su vez se pueda mostrar su procedimiento. Esta herramienta soporta una variedad de funciones, incluyendo operaciones aritméticas básicas, funciones trigonométricas, logaritmos, fisica y entre muchas opciones más que pronto estaran disponibles.
-## *Características*
-- **Operaciones Básicas**: Suma, resta, multiplicación, división, redondeo y aleatorio.
-- **Geometria**: Jerarquia y conjunto de datos.
-- **Funciones Trigonométricas**: Seno, coseno, tangente.
-- **Logaritmos**: Logaritmo natural y logaritmo en base 10.
-- **Funciones Avanzadas**: Potencias, raíces.
-- **Calculos de espacios cuadradas**: Cuadrado, triangulo, circulo, rectangulo.
-- **Calculos de espacios tridimencionales**: Cubo, cono, piramide, ovalo.
-- **Fisica**: Velocidad, distacia, tiempo, aceleracion,
-- **Calculo diferencial**: Derivadas, limites, funcion, cercano al cero.
-- **Calculo integral**: Integral.
-- **Analitica**: Graficar, Punto medio, coordenadas, circulo fuera del origen y centro en el origen, tabular.
+# **Calculadora Avanzada** 
+## _*Introduccion*_
+### Descripción
+> La **Calculadora Avanzada"** es una aplicación diseñada para realizar operaciones matemáticas complejas y devolver uno o mas resultados, a su vez se pueda mostrar su procedimiento y serie de pasos. La herramienta soporta una gran variedad de funciones, incluyendo operaciones aritméticas básicas, funciones, trigonométricas, logaritmos, fisica entre muchas opciones más disponibles que pronto estaran disponibles.
+### *Ramas matematicas en desarollo*
+- **Operaciones Básicas:**
+    * Suma
+    * Resta
+    * Multiplicación
+    * División
+    * Redondeo 
+    * Aleatorio 
+    * Cantidad de digitos.
+- **Geometria:** 
+    * Jerarquia 
+    * conjunto de datos.
+- **Trigonometria:**
+- **Funciones trigonométrica:** 
+    * Seno 
+    * Coseno 
+    * Tangente.
+- **Logaritmos:** 
+    * Logaritmo natural 
+    * Logaritmo en base 10.
+- **Funciones Avanzadas:** 
+    * Potencias 
+    * Raíces.
+- **Calculos de espacios cuadradas:** 
+    * Cuadrado 
+    * Rectangulo 
+    * Triangulo 
+    * Circulo 
+    * Rombo 
+    * Romboide 
+    * Trapecio. 
+    * Pentagono. 
+    * Hexagono.
+- **Calculos de espacios tridimencionales:** 
+    * Cubo 
+    * Cono 
+    * Piramide 
+    * Ovalo.
+- **Fisica:** 
+    * Velocidad 
+    * Distacia 
+    * Tiempo 
+    * Aceleracion
+- **Calculo diferencial:** 
+    * Derivadas 
+    * Limites 
+    * Funcion 
+    * Cercano al cero.
+- **Calculo integral:** 
+    * Integral.
+- **Analitica:** 
+    * Graficar 
+    * Punto medio 
+    * Coordenadas 
+    * Circulo fuera del origen 
+    * Centro en el origen 
+    * Tabular.
+- **Conversor:**  
 ---
-## Diferencias o planes de desarollo
-Se plantea que se pueda usar las variables de las operaciones con varios procesos diferentes en vez de una sola, esta dividida en clases y subclases para evitar sobre recargar la memoria, esto se hace ya que se usaria varias veces para que se pueda mostrar el procedimiento paso por paso para el usuario, con este fin es reutilizar las variables para que el usuario pueda entender el procedimiento, gracias a esto se puede usar flechas, animaciones, gifs ntre otros para que se pueda etender de la mejor manera.
----
->Nota: Usa el lenguaje de java para usarse tanto en el orden de las matematicas como graficar las funciones, de esta manera se mostrara facilmente la tabulacion, los procedimientos y una explicacion del procedimiento de la misma.
->¿Porque tanto clases hereradas? Esto se hace para comprender el codigo de manera mas facil para comprender su funcionamiento, de esta manera se hereda los atributos de los datos que se almacenara y se usara la misma para regresar un resultado y usarse las variables para mostrar directamente el procedimiento. Lo que facilitara en ingresar mas formulas.
----
-**[Para hacer las expresiones de las matematicas es importanto que se use las clases padre para poder heredar los atributos, de esta manera despues del override se implementa el procedimiento de manera mas sensilla]**
+### Diferencias o planes de desarollo:
+>Se plantea que se deberia usar las variables de las operaciones matematicas como procesos o serie de pasos y que se muestre en la GUI en una sola, esta dividida en clases padre y clases hija, de ewsta manera sera escalable y evitando sobre recargar en la memoria, esto se hace ya que se evitara requisitos altos y facilmente seguir el procedimiento varias veces hasta llegar el resultado, de esta manera se mostrara al usuario, con este fin es reutilizar las variables en casos repetidos a su vez servira en mostrar la GUI en el procedimiento y al final sera facilmente compresible para el usuario y pueda entender el procedimiento, se utilizara las flechas o señalizaciones, circulos, animaciones, gifs, imagenes entre otros graficos de la cual facilmente se hace un seguimiento de la mejor manera.
+>>#### **Nota**:
+>>Se utiliza el lenguaje de programacion Java para usarse en el orden de los procedimientos matematicos y realizar el seguimientp de la serie de pasoss a su vez graficar la GUI, al igual en la tabulacion para las funciones, al igual en otras ramas de las matematicas.
+>>#### **¿Porque se decidio las clases hereradas, padres e hijas?:**
+>>Esto se hace para comprender el codigo de manera mas facil y sencilla para realizar y comprender su funcionamiento, de esta manera se hereda los atributos de los datos que se almacenara y se usara la mismas variables para realizar los procediientos matematicos y regresar uno o mas resultados e integrarlo en la GUI, al igual usarse las variables hechas para mostrar directamente la serie de pasos. Lo que facilitara en ingresar mas formulas, insercion de mas pasos entre otros.
