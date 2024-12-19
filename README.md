@@ -11,10 +11,20 @@
     * Redondeo 
     * Aleatorio 
     * Cantidad de digitos.
+- **Aritmetica:**
+    * Suma de fraccion
+    * Resta de fraccion
+    * Multiplicacion de fraccion
+    * Diivision de fraccion
 - **Geometria:** 
     * Jerarquia 
     * conjunto de datos.
+    * Binomio
+    * Trinomio
+    * Polinomio
 - **Trigonometria:**
+    * Angulos a completar
+    * Inclinacion
 - **Funciones trigonométrica:** 
     * Seno 
     * Coseno 
@@ -25,6 +35,12 @@
 - **Funciones Avanzadas:** 
     * Potencias 
     * Raíces.
+    * Porcentaje
+        * Suma
+        * Resta
+    * Potencia
+        * Positivo
+        * Negativo
 - **Calculos de espacios cuadradas:** 
     * Cuadrado 
     * Rectangulo 
@@ -41,10 +57,17 @@
     * Piramide 
     * Ovalo.
 - **Fisica:** 
-    * Velocidad 
+    * Velocidad
+        * Unidades por hora
+        * Unidades por segundo
+        * Unidades por minuto
+        * Aceleracion
+        * Desaceleracion
     * Distacia 
     * Tiempo 
-    * Aceleracion
+    * Masa
+    * Energia
+    * Grasa
 - **Calculo diferencial:** 
     * Derivadas 
     * Limites 
@@ -52,6 +75,9 @@
     * Cercano al cero.
 - **Calculo integral:** 
     * Integral.
+    * Bajo la curva
+    * Encima de la curva
+    * Area exacta
 - **Analitica:** 
     * Graficar 
     * Punto medio 
@@ -59,9 +85,31 @@
     * Circulo fuera del origen 
     * Centro en el origen 
     * Tabular.
-- **Conversor:**  
+    * Parabola
+    * Recta
+- **Conversor:**
+    * Masa
+    * Peso
+        * Peso de internacional a inglesa
+        * Peso de inglesa a internacional
+    * Velocidad
+        * Velocidad de internacional a inglesa
+        * Velocidad de inglesa a internacional
+    * Datos
+        * Almacenamiento
+        * Tranferencia
+        * Monitoreo
+    * Distancia 
+        * Distancia de internacional a inglesa
+        * Distancia de inglesa a internacional
+    * Temperatura
+        * Temperatura de internacional a inglesa
+        * Temperatura de iglesa a internacional
+    * Tiempo
+    * Area superficial
+- **Quimica:**
 ---
-### Diferencias o planes de desarollo:
+### Planes de desarollo:
 >Se plantea que se deberia usar las variables de las operaciones matematicas como procesos o serie de pasos y que se muestre en la GUI en una sola, esta dividida en clases padre y clases hija, de ewsta manera sera escalable y evitando sobre recargar en la memoria, esto se hace ya que se evitara requisitos altos y facilmente seguir el procedimiento varias veces hasta llegar el resultado, de esta manera se mostrara al usuario, con este fin es reutilizar las variables en casos repetidos a su vez servira en mostrar la GUI en el procedimiento y al final sera facilmente compresible para el usuario y pueda entender el procedimiento, se utilizara las flechas o señalizaciones, circulos, animaciones, gifs, imagenes entre otros graficos de la cual facilmente se hace un seguimiento de la mejor manera.
 >>#### **Nota**:
 >>Se utiliza el lenguaje de programacion Java para usarse en el orden de los procedimientos matematicos y realizar el seguimientp de la serie de pasoss a su vez graficar la GUI, al igual en la tabulacion para las funciones, al igual en otras ramas de las matematicas.
