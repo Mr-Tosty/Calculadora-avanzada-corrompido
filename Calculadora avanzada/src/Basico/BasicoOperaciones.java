@@ -271,7 +271,7 @@ public class BasicoOperaciones {
         @Override
         public int dividir(){
             if (VD2 == 0 || VD3 == 0 || VD4 == 0 || VD5 == 0){
-                Ssytem.out.printn("Invalida la division");
+                System.out.println("Invalida la division");
                 JOptionPane.showMessageDialog(null, "No se debe dividir entre 0",
                     "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");
@@ -328,8 +328,8 @@ public class BasicoOperaciones {
         }
         @Override
         public int dividir(){
-            if(VD2 == 0){Ssytem.out.println();
-                Sytem.out.println("Invalida la difivion");
+            if(VD2 == 0){
+                System.out.println("Invalida la difivion");
                 JOptionPane.showMessageDialog(null, "No se debe dividir entre 0",
                     "Division invalida", JOptionPane.ERROR_MESSAGE);
                 throw new ArithmeticException("No se puede dividir entre 0");

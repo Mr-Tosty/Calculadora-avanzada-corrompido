@@ -292,7 +292,7 @@ public class CuadradaOperaciones{
     public class RTrP extends Trapecio{
         public RTrP (int VTB, int VTb, int VTH, int VTBA, int VTa){
             super(VTB, VTb, 0, VTBA);
-            this.VTa = badValueTag;
+            this.VTa = VTa;
         }
         @Override
         public int[] trapecioperimetro(){
@@ -304,104 +304,79 @@ public class CuadradaOperaciones{
     }
     //Clase para la base pentagono
     public abstract class Pentagono{
-        //Variable Pentagono Lado A-B
-        protected int VPLA;
-        protected int VPLB;
-        public Pentagono(int VPLA, int VPLB){
-            this.VPLA = VPLA;
-            this.VPLB = VPLB;
+        //Variable Pentagono Lado L-ap
+        protected int VPLL;
+        protected int VPLap;
+        public Pentagono(int VPLL, int VPLap){
+            this.VPLL = VPLL;
+            this.VPLap = VPLap;
         }
         public abstract int pentagonoarea();//Metodo abstracto pentagono area
         public abstract int pentagonoperimetro();//Metodo abstracto pentagono perimetro
     }
     //Clase para el area pentagono
     public class RPA extends Pentagono{
-        public RPA (int VPLA, int VPLB){
-            super(VLPA, VPLB);
+        public RPA (int VPLL, int VPLap){
+            super(VPLL, VPLap);
         }
         @Override
         public int[] pentagonoarea{
+            //Variable Procedimiento Area Pentagono 1 - 2
+            int VPAP1 = 5 * VLPA * VPLap;
+            int VPAP2 = VPAP1 / 2;
             System.out.println("Area del pentagono");
-            return new int[]{};
+            return new int[]{VPAP1, VPAP2};
         }
     }
     //Clase para el perimetro pentagono
     public class RPP extends Pentagono{
-        public RPP (int VPLA, int VPLB){
-            super(VPLA, VPLB);
+        public RPP (int VPLL, int VPLap){
+            super(VPLL, 0);
         }
         @Override 
         public int[] pentagonoperimetro{
+            //Variable Procedimiento Perimetro Pentagono
+            int VPPP = 5 * VPLL;
             System.out.println("Perimetro del pentagono");
-            return new int[]{};
+            return new int[]{VPPP};
         }
     }
     //Clase para la base hexagono
     public abstract class Hexagono{
-        //Variable Hexagono Lado A-B
-        protected int VHLA;
-        protected int VHLB;
-        public Hexagono(int VHLA, int VHLB){
-            this.VHLA = VHLA;
-            this.VHLB = VHLB;
+        //Variable Hexagono Lado L-ap
+        protected int VHLL;
+        protected int VHLap;
+        public Hexagono(int VHLL, int VHLap){
+            this.VHLL = VHLL;
+            this.VHLap = VHLap;
         }
         public abstract int[] hexagonoarea();//Metodo abstracto hexagono area
         public abstract int[] hexagonoperimetro(); //Metodo abstracto hexagono perimetro
     }
     //Clase para el area hexagono
     public class RHA extends Hexagono{
-        public RHA (int VHLA, int VHLB){
-            super( VHLA, VHLB);
+        public RHA (int VHLL, int VHLap){
+            super( VHLL, VHLap);
         }
         @Override
         public int[] hexagonoarea(){
-            System.out.println("Area del hexagono")
-            return new int[]{};
+            //Variable Procedimiento Area Hexagon
+            int VPAH = 3 * VHLL * VHLap;
+            System.out.println("Area del hexagono");
+            return new int[]{VPAH};
         }
     }
     //Clase para el perimetro hexagono
     public class RHP extends Hexagono{
-        public RHP (int VHLA, int VHLB){
-            super(VHLA, VHLB);
+        public RHP (int VHLL, int VHLap){
+            super(VHLL, 0);
         }
         @Override
         public int[] hexagonoperimetro(){
-            system.out.println("Perimetro del hexagono");
-            return new int[]{};
-        }
-    }
-    //Clase para la base deltoide
-    public abstract class Deltoide{
-        //Variable Deltoide d-D
-        protected int VDd;
-        protected int VDD;
-        public Deltoide(int VDd, int VDD){
-            this.VDd = VDd;
-            this.VDD = VDD;
-        }
-        public abstract int[] deltoidearea();//Metodo abstracto deltoide area
-        public abstract int[] deltoideperimetro();//Metodo abstracto deltoide perimetro
-    }
-    //Clase para el area de deltoide
-    public class RDA extends Deltoide{
-        public RDA (int VDd, int VDD){
-            super(VDd, VDD);
-        }
-        @Override
-        public int[] deltoidearea(){
-            System.out.println("Area del deltoide");
-            return new int[]{};
-        }
-    }
-    //Clase para el perimetro deltoide
-    public class RDP extends Deltoide{
-        public RDP (int VDd, int VDD){
-            super(VDd, VDd)
-        }
-        @Override
-        public int[] deltoideperimetro(){
-            System.out.println("Perimero del deltoide");
-            return new int[]{}
+            //Variable Procedimiento Perimetro Hexagono
+            int VPPH = 6 * VHLL;
+            System.out.println("Perimetro del hexagono");
+            return new int[]{VPPH};
         }
     }
 }
