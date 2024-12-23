@@ -1,4 +1,4 @@
-package Cubica
+package Cubica;
 //Clase para la base esfera
 public abstract class Esfera{
     //Variable Lado Esfera A

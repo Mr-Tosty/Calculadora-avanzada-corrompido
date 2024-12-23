@@ -1,3 +1,4 @@
+package Cubica;
 //Clase para la base piramide rectangular
 public abstract class PiramideRectangular{
     //Variable Lado Piramide rectangular A

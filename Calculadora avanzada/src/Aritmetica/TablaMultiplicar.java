@@ -1,4 +1,4 @@
-
+package Aritmetica;
 //Clase para la tabla de multiplicar
 public abstract class TablaMultiplicar{
     //Variable Tabla de Multiplicar base
