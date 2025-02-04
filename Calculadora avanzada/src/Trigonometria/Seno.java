@@ -1,5 +1,5 @@
 package Trigonometria;
-public class TrigonometriaOperaciones{
+public class Seno{
     //Clase base de seno
     public abstract class Seno{
         //Variable Seno
