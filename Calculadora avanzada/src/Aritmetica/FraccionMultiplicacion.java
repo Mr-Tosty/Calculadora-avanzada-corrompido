@@ -27,7 +27,7 @@ public abstract class FraccionMultiplicacion{
         public int[] fraccionmultiplicar(){
             //Variable Multiplicacion Fraccion Procedimiento 1 - 2
             int VMFP1 = VMFN1 * VMFN2 * VMFN3;
-            INT VMFP2 = VMFD1 * VMFD2 * VMFD3;
+            int VMFP2 = VMFD1 * VMFD2 * VMFD3;
             System.out.println("Multiplicacion de fraccion de 3 fracciones y 6 variables");
             return new int[]{VMFP1, VMFP2};
         }
